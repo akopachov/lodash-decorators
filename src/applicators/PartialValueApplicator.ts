@@ -1,4 +1,4 @@
-import isFunction = require('lodash/isFunction');
+import { isFunction } from 'lodash-es';
 
 import { Applicator, ApplicateOptions } from './Applicator';
 import { resolveFunction } from '../utils';
@@ -15,6 +15,6 @@ export class PartialValueApplicator extends Applicator {
       }
 
       return execute(fn, ...args.slice(argIndex)).apply(this, invokeArgs);
-    }
+    };
   }
 }

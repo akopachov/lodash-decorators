@@ -1,4 +1,4 @@
-import curryRight = require('lodash/curryRight');
+import { curryRight } from 'lodash-es';
 
 import { DecoratorConfig, DecoratorFactory, BiTypedMethodDecorator1 } from './factory';
 import { PreValueApplicator } from './applicators';

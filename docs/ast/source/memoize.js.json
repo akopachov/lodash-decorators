@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 323,
+  "end": 1180,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 7,
+      "line": 31,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 323,
+    "end": 1180,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 7,
+        "line": 31,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 33,
+        "end": 36,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 33
+            "column": 36
           }
         },
         "specifiers": [
@@ -96,7 +96,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 24,
-          "end": 32,
+          "end": 35,
           "loc": {
             "start": {
               "line": 1,
@@ -104,20 +104,20 @@
             },
             "end": {
               "line": 1,
-              "column": 32
+              "column": 35
             }
           },
           "extra": {
-            "rawValue": "lodash",
-            "raw": "'lodash'"
+            "rawValue": "lodash-es",
+            "raw": "'lodash-es'"
           },
-          "value": "lodash"
+          "value": "lodash-es"
         }
       },
       {
         "type": "ImportDeclaration",
-        "start": 34,
-        "end": 96,
+        "start": 38,
+        "end": 100,
         "loc": {
           "start": {
             "line": 2,
@@ -131,8 +131,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 43,
-            "end": 58,
+            "start": 47,
+            "end": 62,
             "loc": {
               "start": {
                 "line": 2,
@@ -145,8 +145,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 43,
-              "end": 58,
+              "start": 47,
+              "end": 62,
               "loc": {
                 "start": {
                   "line": 2,
@@ -162,8 +162,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 43,
-              "end": 58,
+              "start": 47,
+              "end": 62,
               "loc": {
                 "start": {
                   "line": 2,
@@ -180,8 +180,8 @@
           },
           {
             "type": "ImportSpecifier",
-            "start": 60,
-            "end": 76,
+            "start": 64,
+            "end": 80,
             "loc": {
               "start": {
                 "line": 2,
@@ -194,8 +194,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 60,
-              "end": 76,
+              "start": 64,
+              "end": 80,
               "loc": {
                 "start": {
                   "line": 2,
@@ -211,8 +211,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 60,
-              "end": 76,
+              "start": 64,
+              "end": 80,
               "loc": {
                 "start": {
                   "line": 2,
@@ -230,8 +230,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 84,
-          "end": 95,
+          "start": 88,
+          "end": 99,
           "loc": {
             "start": {
               "line": 2,
@@ -251,8 +251,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 97,
-        "end": 147,
+        "start": 102,
+        "end": 152,
         "loc": {
           "start": {
             "line": 3,
@@ -266,8 +266,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 106,
-            "end": 123,
+            "start": 111,
+            "end": 128,
             "loc": {
               "start": {
                 "line": 3,
@@ -280,8 +280,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 106,
-              "end": 123,
+              "start": 111,
+              "end": 128,
               "loc": {
                 "start": {
                   "line": 3,
@@ -297,8 +297,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 106,
-              "end": 123,
+              "start": 111,
+              "end": 128,
               "loc": {
                 "start": {
                   "line": 3,
@@ -316,8 +316,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 131,
-          "end": 146,
+          "start": 136,
+          "end": 151,
           "loc": {
             "start": {
               "line": 3,
@@ -333,109 +333,128 @@
             "raw": "'./applicators'"
           },
           "value": "./applicators"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * Creates a function that memoizes the result of func. If resolver is provided,\r\n * it determines the cache key for storing the result based on the arguments provided to the memoized function.\r\n * By default, the first argument provided to the memoized function is used as the map cache key.\r\n * The func is invoked with the this binding of the memoized function.\r\n *\r\n * You can use a Function or a string that references a method on the class as the resolver.\r\n * You can also use a configuration object that lets provide a prexisting cache or specify\r\n * the map type to use.\r\n *\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Memoize({ type: WeakMap })\r\n *   getName(item) {\r\n *     return item.name;\r\n *   }\r\n *\r\n *   @Memoize('getName')\r\n *   getLastName(item) {\r\n *     return item.lastName;\r\n *   }\r\n * }\r\n ",
+            "start": 154,
+            "end": 974,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 148,
-        "end": 267,
+        "start": 976,
+        "end": 1121,
         "loc": {
           "start": {
-            "line": 4,
+            "line": 28,
             "column": 0
           },
           "end": {
-            "line": 4,
-            "column": 119
+            "line": 28,
+            "column": 145
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 155,
-          "end": 267,
+          "start": 983,
+          "end": 1121,
           "loc": {
             "start": {
-              "line": 4,
+              "line": 28,
               "column": 7
             },
             "end": {
-              "line": 4,
-              "column": 119
+              "line": 28,
+              "column": 145
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 161,
-              "end": 266,
+              "start": 989,
+              "end": 1120,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 28,
                   "column": 13
                 },
                 "end": {
-                  "line": 4,
-                  "column": 118
+                  "line": 28,
+                  "column": 144
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 161,
-                "end": 168,
+                "start": 989,
+                "end": 996,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 28,
                     "column": 13
                   },
                   "end": {
-                    "line": 4,
+                    "line": 28,
                     "column": 20
                   },
                   "identifierName": "Memoize"
                 },
-                "name": "Memoize"
+                "name": "Memoize",
+                "leadingComments": null
               },
               "init": {
                 "type": "CallExpression",
-                "start": 171,
-                "end": 266,
+                "start": 999,
+                "end": 1120,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 28,
                     "column": 23
                   },
                   "end": {
-                    "line": 4,
-                    "column": 118
+                    "line": 28,
+                    "column": 144
                   }
                 },
                 "callee": {
                   "type": "MemberExpression",
-                  "start": 171,
-                  "end": 211,
+                  "start": 999,
+                  "end": 1039,
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 28,
                       "column": 23
                     },
                     "end": {
-                      "line": 4,
+                      "line": 28,
                       "column": 63
                     }
                   },
                   "object": {
                     "type": "Identifier",
-                    "start": 171,
-                    "end": 187,
+                    "start": 999,
+                    "end": 1015,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 28,
                         "column": 23
                       },
                       "end": {
-                        "line": 4,
+                        "line": 28,
                         "column": 39
                       },
                       "identifierName": "DecoratorFactory"
@@ -444,15 +463,15 @@
                   },
                   "property": {
                     "type": "Identifier",
-                    "start": 188,
-                    "end": 211,
+                    "start": 1016,
+                    "end": 1039,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 28,
                         "column": 40
                       },
                       "end": {
-                        "line": 4,
+                        "line": 28,
                         "column": 63
                       },
                       "identifierName": "createInstanceDecorator"
@@ -464,29 +483,29 @@
                 "arguments": [
                   {
                     "type": "NewExpression",
-                    "start": 212,
-                    "end": 265,
+                    "start": 1040,
+                    "end": 1119,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 28,
                         "column": 64
                       },
                       "end": {
-                        "line": 4,
-                        "column": 117
+                        "line": 28,
+                        "column": 143
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 216,
-                      "end": 231,
+                      "start": 1044,
+                      "end": 1059,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 28,
                           "column": 68
                         },
                         "end": {
-                          "line": 4,
+                          "line": 28,
                           "column": 83
                         },
                         "identifierName": "DecoratorConfig"
@@ -496,15 +515,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 232,
-                        "end": 239,
+                        "start": 1060,
+                        "end": 1067,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 28,
                             "column": 84
                           },
                           "end": {
-                            "line": 4,
+                            "line": 28,
                             "column": 91
                           },
                           "identifierName": "memoize"
@@ -513,29 +532,29 @@
                       },
                       {
                         "type": "NewExpression",
-                        "start": 241,
-                        "end": 264,
+                        "start": 1069,
+                        "end": 1092,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 28,
                             "column": 93
                           },
                           "end": {
-                            "line": 4,
+                            "line": 28,
                             "column": 116
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 245,
-                          "end": 262,
+                          "start": 1073,
+                          "end": 1090,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 28,
                               "column": 97
                             },
                             "end": {
-                              "line": 4,
+                              "line": 28,
                               "column": 114
                             },
                             "identifierName": "MemoizeApplicator"
@@ -543,29 +562,133 @@
                           "name": "MemoizeApplicator"
                         },
                         "arguments": []
+                      },
+                      {
+                        "type": "ObjectExpression",
+                        "start": 1094,
+                        "end": 1118,
+                        "loc": {
+                          "start": {
+                            "line": 28,
+                            "column": 118
+                          },
+                          "end": {
+                            "line": 28,
+                            "column": 142
+                          }
+                        },
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "start": 1096,
+                            "end": 1116,
+                            "loc": {
+                              "start": {
+                                "line": 28,
+                                "column": 120
+                              },
+                              "end": {
+                                "line": 28,
+                                "column": 140
+                              }
+                            },
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "start": 1096,
+                              "end": 1110,
+                              "loc": {
+                                "start": {
+                                  "line": 28,
+                                  "column": 120
+                                },
+                                "end": {
+                                  "line": 28,
+                                  "column": 134
+                                },
+                                "identifierName": "optionalParams"
+                              },
+                              "name": "optionalParams"
+                            },
+                            "value": {
+                              "type": "BooleanLiteral",
+                              "start": 1112,
+                              "end": 1116,
+                              "loc": {
+                                "start": {
+                                  "line": 28,
+                                  "column": 136
+                                },
+                                "end": {
+                                  "line": 28,
+                                  "column": 140
+                                }
+                              },
+                              "value": true
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * Creates a function that memoizes the result of func. If resolver is provided,\r\n * it determines the cache key for storing the result based on the arguments provided to the memoized function.\r\n * By default, the first argument provided to the memoized function is used as the map cache key.\r\n * The func is invoked with the this binding of the memoized function.\r\n *\r\n * You can use a Function or a string that references a method on the class as the resolver.\r\n * You can also use a configuration object that lets provide a prexisting cache or specify\r\n * the map type to use.\r\n *\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Memoize({ type: WeakMap })\r\n *   getName(item) {\r\n *     return item.name;\r\n *   }\r\n *\r\n *   @Memoize('getName')\r\n *   getLastName(item) {\r\n *     return item.lastName;\r\n *   }\r\n * }\r\n ",
+              "start": 154,
+              "end": 974,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 27,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * Creates a function that memoizes the result of func. If resolver is provided,\r\n * it determines the cache key for storing the result based on the arguments provided to the memoized function.\r\n * By default, the first argument provided to the memoized function is used as the map cache key.\r\n * The func is invoked with the this binding of the memoized function.\r\n *\r\n * You can use a Function or a string that references a method on the class as the resolver.\r\n * You can also use a configuration object that lets provide a prexisting cache or specify\r\n * the map type to use.\r\n *\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Memoize({ type: WeakMap })\r\n *   getName(item) {\r\n *     return item.name;\r\n *   }\r\n *\r\n *   @Memoize('getName')\r\n *   getLastName(item) {\r\n *     return item.lastName;\r\n *   }\r\n * }\r\n ",
+            "start": 154,
+            "end": 974,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 27,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 268,
-        "end": 298,
+        "start": 1123,
+        "end": 1153,
         "loc": {
           "start": {
-            "line": 5,
+            "line": 29,
             "column": 0
           },
           "end": {
-            "line": 5,
+            "line": 29,
             "column": 30
           }
         },
@@ -573,29 +696,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 277,
-            "end": 295,
+            "start": 1132,
+            "end": 1150,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 29,
                 "column": 9
               },
               "end": {
-                "line": 5,
+                "line": 29,
                 "column": 27
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 277,
-              "end": 284,
+              "start": 1132,
+              "end": 1139,
               "loc": {
                 "start": {
-                  "line": 5,
+                  "line": 29,
                   "column": 9
                 },
                 "end": {
-                  "line": 5,
+                  "line": 29,
                   "column": 16
                 },
                 "identifierName": "Memoize"
@@ -604,15 +727,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 288,
-              "end": 295,
+              "start": 1143,
+              "end": 1150,
               "loc": {
                 "start": {
-                  "line": 5,
+                  "line": 29,
                   "column": 20
                 },
                 "end": {
-                  "line": 5,
+                  "line": 29,
                   "column": 27
                 },
                 "identifierName": "memoize"
@@ -625,29 +748,29 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 299,
-        "end": 322,
+        "start": 1155,
+        "end": 1178,
         "loc": {
           "start": {
-            "line": 6,
+            "line": 30,
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 30,
             "column": 23
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 314,
-          "end": 321,
+          "start": 1170,
+          "end": 1177,
           "loc": {
             "start": {
-              "line": 6,
+              "line": 30,
               "column": 15
             },
             "end": {
-              "line": 6,
+              "line": 30,
               "column": 22
             },
             "identifierName": "Memoize"
@@ -660,14 +783,31 @@
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * Creates a function that memoizes the result of func. If resolver is provided,\r\n * it determines the cache key for storing the result based on the arguments provided to the memoized function.\r\n * By default, the first argument provided to the memoized function is used as the map cache key.\r\n * The func is invoked with the this binding of the memoized function.\r\n *\r\n * You can use a Function or a string that references a method on the class as the resolver.\r\n * You can also use a configuration object that lets provide a prexisting cache or specify\r\n * the map type to use.\r\n *\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Memoize({ type: WeakMap })\r\n *   getName(item) {\r\n *     return item.name;\r\n *   }\r\n *\r\n *   @Memoize('getName')\r\n *   getLastName(item) {\r\n *     return item.lastName;\r\n *   }\r\n * }\r\n ",
+      "start": 154,
+      "end": 974,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -805,9 +945,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "lodash",
+      "value": "lodash-es",
       "start": 24,
-      "end": 32,
+      "end": 35,
       "loc": {
         "start": {
           "line": 1,
@@ -815,7 +955,7 @@
         },
         "end": {
           "line": 1,
-          "column": 32
+          "column": 35
         }
       }
     },
@@ -832,16 +972,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 32,
-      "end": 33,
+      "start": 35,
+      "end": 36,
       "loc": {
         "start": {
           "line": 1,
-          "column": 32
+          "column": 35
         },
         "end": {
           "line": 1,
-          "column": 33
+          "column": 36
         }
       }
     },
@@ -850,7 +990,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -860,8 +1000,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 34,
-      "end": 40,
+      "start": 38,
+      "end": 44,
       "loc": {
         "start": {
           "line": 2,
@@ -885,8 +1025,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 41,
-      "end": 42,
+      "start": 45,
+      "end": 46,
       "loc": {
         "start": {
           "line": 2,
@@ -911,8 +1051,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 43,
-      "end": 58,
+      "start": 47,
+      "end": 62,
       "loc": {
         "start": {
           "line": 2,
@@ -937,8 +1077,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 58,
-      "end": 59,
+      "start": 62,
+      "end": 63,
       "loc": {
         "start": {
           "line": 2,
@@ -963,8 +1103,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 60,
-      "end": 76,
+      "start": 64,
+      "end": 80,
       "loc": {
         "start": {
           "line": 2,
@@ -988,8 +1128,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 77,
-      "end": 78,
+      "start": 81,
+      "end": 82,
       "loc": {
         "start": {
           "line": 2,
@@ -1014,8 +1154,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 79,
-      "end": 83,
+      "start": 83,
+      "end": 87,
       "loc": {
         "start": {
           "line": 2,
@@ -1041,8 +1181,8 @@
         "updateContext": null
       },
       "value": "./factory",
-      "start": 84,
-      "end": 95,
+      "start": 88,
+      "end": 99,
       "loc": {
         "start": {
           "line": 2,
@@ -1067,8 +1207,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 95,
-      "end": 96,
+      "start": 99,
+      "end": 100,
       "loc": {
         "start": {
           "line": 2,
@@ -1085,7 +1225,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1095,8 +1235,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 97,
-      "end": 103,
+      "start": 102,
+      "end": 108,
       "loc": {
         "start": {
           "line": 3,
@@ -1120,8 +1260,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 104,
-      "end": 105,
+      "start": 109,
+      "end": 110,
       "loc": {
         "start": {
           "line": 3,
@@ -1146,8 +1286,8 @@
         "binop": null
       },
       "value": "MemoizeApplicator",
-      "start": 106,
-      "end": 123,
+      "start": 111,
+      "end": 128,
       "loc": {
         "start": {
           "line": 3,
@@ -1171,8 +1311,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 124,
-      "end": 125,
+      "start": 129,
+      "end": 130,
       "loc": {
         "start": {
           "line": 3,
@@ -1197,8 +1337,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 126,
-      "end": 130,
+      "start": 131,
+      "end": 135,
       "loc": {
         "start": {
           "line": 3,
@@ -1224,8 +1364,8 @@
         "updateContext": null
       },
       "value": "./applicators",
-      "start": 131,
-      "end": 146,
+      "start": 136,
+      "end": 151,
       "loc": {
         "start": {
           "line": 3,
@@ -1250,8 +1390,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 146,
-      "end": 147,
+      "start": 151,
+      "end": 152,
       "loc": {
         "start": {
           "line": 3,
@@ -1260,6 +1400,22 @@
         "end": {
           "line": 3,
           "column": 50
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * Creates a function that memoizes the result of func. If resolver is provided,\r\n * it determines the cache key for storing the result based on the arguments provided to the memoized function.\r\n * By default, the first argument provided to the memoized function is used as the map cache key.\r\n * The func is invoked with the this binding of the memoized function.\r\n *\r\n * You can use a Function or a string that references a method on the class as the resolver.\r\n * You can also use a configuration object that lets provide a prexisting cache or specify\r\n * the map type to use.\r\n *\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Memoize({ type: WeakMap })\r\n *   getName(item) {\r\n *     return item.name;\r\n *   }\r\n *\r\n *   @Memoize('getName')\r\n *   getLastName(item) {\r\n *     return item.lastName;\r\n *   }\r\n * }\r\n ",
+      "start": 154,
+      "end": 974,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 3
         }
       }
     },
@@ -1278,15 +1434,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 148,
-      "end": 154,
+      "start": 976,
+      "end": 982,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 6
         }
       }
@@ -1306,15 +1462,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 155,
-      "end": 160,
+      "start": 983,
+      "end": 988,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 7
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 12
         }
       }
@@ -1332,15 +1488,15 @@
         "binop": null
       },
       "value": "Memoize",
-      "start": 161,
-      "end": 168,
+      "start": 989,
+      "end": 996,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 13
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 20
         }
       }
@@ -1359,15 +1515,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 169,
-      "end": 170,
+      "start": 997,
+      "end": 998,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 21
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 22
         }
       }
@@ -1385,15 +1541,15 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 171,
-      "end": 187,
+      "start": 999,
+      "end": 1015,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 23
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 39
         }
       }
@@ -1411,15 +1567,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 187,
-      "end": 188,
+      "start": 1015,
+      "end": 1016,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 39
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 40
         }
       }
@@ -1437,15 +1593,15 @@
         "binop": null
       },
       "value": "createInstanceDecorator",
-      "start": 188,
-      "end": 211,
+      "start": 1016,
+      "end": 1039,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 40
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 63
         }
       }
@@ -1462,15 +1618,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 211,
-      "end": 212,
+      "start": 1039,
+      "end": 1040,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 63
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 64
         }
       }
@@ -1490,15 +1646,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 212,
-      "end": 215,
+      "start": 1040,
+      "end": 1043,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 64
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 67
         }
       }
@@ -1516,15 +1672,15 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 216,
-      "end": 231,
+      "start": 1044,
+      "end": 1059,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 68
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 83
         }
       }
@@ -1541,15 +1697,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 231,
-      "end": 232,
+      "start": 1059,
+      "end": 1060,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 83
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 84
         }
       }
@@ -1567,15 +1723,15 @@
         "binop": null
       },
       "value": "memoize",
-      "start": 232,
-      "end": 239,
+      "start": 1060,
+      "end": 1067,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 84
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 91
         }
       }
@@ -1593,15 +1749,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 239,
-      "end": 240,
+      "start": 1067,
+      "end": 1068,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 91
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 92
         }
       }
@@ -1621,15 +1777,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 241,
-      "end": 244,
+      "start": 1069,
+      "end": 1072,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 93
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 96
         }
       }
@@ -1647,15 +1803,15 @@
         "binop": null
       },
       "value": "MemoizeApplicator",
-      "start": 245,
-      "end": 262,
+      "start": 1073,
+      "end": 1090,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 97
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 114
         }
       }
@@ -1672,15 +1828,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 262,
-      "end": 263,
+      "start": 1090,
+      "end": 1091,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 114
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 115
         }
       }
@@ -1697,24 +1853,50 @@
         "postfix": false,
         "binop": null
       },
-      "start": 263,
-      "end": 264,
+      "start": 1091,
+      "end": 1092,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 28,
           "column": 115
         },
         "end": {
-          "line": 4,
+          "line": 28,
           "column": 116
         }
       }
     },
     {
       "type": {
-        "label": ")",
-        "beforeExpr": false,
+        "label": ",",
+        "beforeExpr": true,
         "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1092,
+      "end": 1093,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 116
+        },
+        "end": {
+          "line": 28,
+          "column": 117
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1722,41 +1904,171 @@
         "postfix": false,
         "binop": null
       },
-      "start": 264,
-      "end": 265,
+      "start": 1094,
+      "end": 1095,
       "loc": {
         "start": {
-          "line": 4,
-          "column": 116
-        },
-        "end": {
-          "line": 4,
-          "column": 117
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 265,
-      "end": 266,
-      "loc": {
-        "start": {
-          "line": 4,
-          "column": 117
-        },
-        "end": {
-          "line": 4,
+          "line": 28,
           "column": 118
+        },
+        "end": {
+          "line": 28,
+          "column": 119
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "optionalParams",
+      "start": 1096,
+      "end": 1110,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 120
+        },
+        "end": {
+          "line": 28,
+          "column": 134
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1110,
+      "end": 1111,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 134
+        },
+        "end": {
+          "line": 28,
+          "column": 135
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "true",
+        "keyword": "true",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "true",
+      "start": 1112,
+      "end": 1116,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 136
+        },
+        "end": {
+          "line": 28,
+          "column": 140
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1117,
+      "end": 1118,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 141
+        },
+        "end": {
+          "line": 28,
+          "column": 142
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1118,
+      "end": 1119,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 142
+        },
+        "end": {
+          "line": 28,
+          "column": 143
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1119,
+      "end": 1120,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 143
+        },
+        "end": {
+          "line": 28,
+          "column": 144
         }
       }
     },
@@ -1773,16 +2085,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 266,
-      "end": 267,
+      "start": 1120,
+      "end": 1121,
       "loc": {
         "start": {
-          "line": 4,
-          "column": 118
+          "line": 28,
+          "column": 144
         },
         "end": {
-          "line": 4,
-          "column": 119
+          "line": 28,
+          "column": 145
         }
       }
     },
@@ -1801,15 +2113,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 268,
-      "end": 274,
+      "start": 1123,
+      "end": 1129,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 0
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 6
         }
       }
@@ -1826,15 +2138,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 275,
-      "end": 276,
+      "start": 1130,
+      "end": 1131,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 7
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 8
         }
       }
@@ -1852,15 +2164,15 @@
         "binop": null
       },
       "value": "Memoize",
-      "start": 277,
-      "end": 284,
+      "start": 1132,
+      "end": 1139,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 16
         }
       }
@@ -1878,15 +2190,15 @@
         "binop": null
       },
       "value": "as",
-      "start": 285,
-      "end": 287,
+      "start": 1140,
+      "end": 1142,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 17
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 19
         }
       }
@@ -1904,15 +2216,15 @@
         "binop": null
       },
       "value": "memoize",
-      "start": 288,
-      "end": 295,
+      "start": 1143,
+      "end": 1150,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 20
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 27
         }
       }
@@ -1929,15 +2241,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 296,
-      "end": 297,
+      "start": 1151,
+      "end": 1152,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 28
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 29
         }
       }
@@ -1955,15 +2267,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 297,
-      "end": 298,
+      "start": 1152,
+      "end": 1153,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 29,
           "column": 29
         },
         "end": {
-          "line": 5,
+          "line": 29,
           "column": 30
         }
       }
@@ -1983,15 +2295,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 299,
-      "end": 305,
+      "start": 1155,
+      "end": 1161,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 30,
           "column": 0
         },
         "end": {
-          "line": 6,
+          "line": 30,
           "column": 6
         }
       }
@@ -2011,15 +2323,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 306,
-      "end": 313,
+      "start": 1162,
+      "end": 1169,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 30,
           "column": 7
         },
         "end": {
-          "line": 6,
+          "line": 30,
           "column": 14
         }
       }
@@ -2037,15 +2349,15 @@
         "binop": null
       },
       "value": "Memoize",
-      "start": 314,
-      "end": 321,
+      "start": 1170,
+      "end": 1177,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 30,
           "column": 15
         },
         "end": {
-          "line": 6,
+          "line": 30,
           "column": 22
         }
       }
@@ -2063,15 +2375,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 321,
-      "end": 322,
+      "start": 1177,
+      "end": 1178,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 30,
           "column": 22
         },
         "end": {
-          "line": 6,
+          "line": 30,
           "column": 23
         }
       }
@@ -2089,15 +2401,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 323,
-      "end": 323,
+      "start": 1180,
+      "end": 1180,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 31,
           "column": 0
         },
         "end": {
-          "line": 7,
+          "line": 31,
           "column": 0
         }
       }

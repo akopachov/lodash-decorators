@@ -1,17 +1,21 @@
 {
-  "coverage": "28%",
-  "expectCount": 75,
-  "actualCount": 21,
+  "coverage": "31.62%",
+  "expectCount": 117,
+  "actualCount": 37,
   "files": {
     "buildDocs/after.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 1,
-      "undocumentLines": []
+      "undocumentLines": [
+        4
+      ]
     },
     "buildDocs/afterAll.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 1,
-      "undocumentLines": []
+      "undocumentLines": [
+        4
+      ]
     },
     "buildDocs/applicators/Applicator.js": {
       "expectCount": 1,
@@ -19,36 +23,6 @@
       "undocumentLines": [
         1
       ]
-    },
-    "buildDocs/ary.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/attempt.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/before.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/beforeAll.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/bind.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/bindAll.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
     },
     "buildDocs/applicators/BindApplicator.js": {
       "expectCount": 2,
@@ -59,13 +33,118 @@
       ]
     },
     "buildDocs/applicators/ComposeApplicator.js": {
-      "expectCount": 4,
+      "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
         4,
-        12,
         5,
-        9
+        7,
+        9,
+        12
+      ]
+    },
+    "buildDocs/applicators/InvokeApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3
+      ]
+    },
+    "buildDocs/applicators/MemoizeApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "buildDocs/applicators/PartialApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "buildDocs/applicators/PartialedApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "buildDocs/applicators/PartialValueApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "buildDocs/applicators/PostValueApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3
+      ]
+    },
+    "buildDocs/applicators/PreValueApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3
+      ]
+    },
+    "buildDocs/applicators/WrapApplicator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "buildDocs/ary.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "buildDocs/attempt.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "buildDocs/before.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "buildDocs/beforeAll.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "buildDocs/bind.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/bindAll.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        32
       ]
     },
     "buildDocs/curry.js": {
@@ -89,40 +168,17 @@
       "undocumentLines": []
     },
     "buildDocs/debounce.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/debounceAll.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/factory/DecoratorConfig.js": {
-      "expectCount": 10,
-      "actualCount": 0,
       "undocumentLines": [
-        1,
-        4,
-        7,
-        2,
-        3,
-        13,
-        19,
-        5,
-        16,
-        10
+        4
       ]
     },
-    "buildDocs/factory/DecoratorFactory.js": {
-      "expectCount": 5,
-      "actualCount": 0,
+    "buildDocs/debounceAll.js": {
+      "expectCount": 2,
+      "actualCount": 1,
       "undocumentLines": [
-        125,
-        4,
-        105,
-        5,
-        28
+        4
       ]
     },
     "buildDocs/defer.js": {
@@ -131,24 +187,11 @@
       "undocumentLines": []
     },
     "buildDocs/delay.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/flip.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/flow.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "buildDocs/flowRight.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
+      "undocumentLines": [
+        4
+      ]
     },
     "buildDocs/factory/common.js": {
       "expectCount": 1,
@@ -157,119 +200,114 @@
         2
       ]
     },
-    "buildDocs/applicators/InvokeApplicator.js": {
-      "expectCount": 2,
+    "buildDocs/factory/DecoratorConfig.js": {
+      "expectCount": 11,
       "actualCount": 0,
       "undocumentLines": [
+        1,
         2,
-        3
+        3,
+        4,
+        5,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22
+      ]
+    },
+    "buildDocs/factory/DecoratorFactory.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        34,
+        123,
+        135,
+        141,
+        148
+      ]
+    },
+    "buildDocs/flip.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "buildDocs/flow.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "buildDocs/flowRight.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
       ]
     },
     "buildDocs/memoize.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "buildDocs/memoizeAll.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
     },
-    "buildDocs/applicators/MemoizeApplicator.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5
-      ]
-    },
     "buildDocs/mixin.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "buildDocs/negate.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "buildDocs/once.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "buildDocs/onceAll.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "buildDocs/overArgs.js": {
-      "expectCount": 1,
-      "actualCount": 0,
+      "expectCount": 2,
+      "actualCount": 1,
       "undocumentLines": [
         4
       ]
     },
     "buildDocs/partial.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
-    },
-    "buildDocs/applicators/PartialApplicator.js": {
       "expectCount": 2,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        3,
         4
       ]
     },
     "buildDocs/partialRight.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
+        5,
         4
-      ]
-    },
-    "buildDocs/applicators/PartialedApplicator.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4
-      ]
-    },
-    "buildDocs/applicators/PostValueApplicator.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        2,
-        3
-      ]
-    },
-    "buildDocs/applicators/PreValueApplicator.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        2,
-        3
       ]
     },
     "buildDocs/rearg.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
+        5,
         4
       ]
     },
@@ -302,9 +340,10 @@
       ]
     },
     "buildDocs/throttleAll.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
+        5,
         4
       ]
     },
@@ -315,18 +354,73 @@
         4
       ]
     },
-    "buildDocs/wrap.js": {
+    "buildDocs/utils/assignAll.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/bind.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/CompositeKeyWeakMap.js": {
+      "expectCount": 6,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        11,
+        13,
+        26,
+        36
+      ]
+    },
+    "buildDocs/utils/copyMetaData.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/isDecoratorArgs.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
       ]
     },
-    "buildDocs/applicators/WrapApplicator.js": {
+    "buildDocs/utils/isPrototypeAccess.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "buildDocs/utils/log.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/resolveFunction.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/returnAtIndex.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "buildDocs/utils/wrapConstructor.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "buildDocs/wrap.js": {
       "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        3,
+        5,
         4
       ]
     }

@@ -1,15 +1,15 @@
 {
-  "name": "lodash-decorators",
-  "author": "Steven Sojka <steelsojka@gmail.com>",
+  "name": "lodash-decorators-esm",
+  "author": "Alex Kopachov <alex.kopachov@gmail.com>",
   "description": "A collection of decorators using lodash at it's core.",
-  "version": "6.0.1",
+  "version": "6.1.1",
   "engines": {
     "node": ">=0.12.0"
   },
   "scripts": {
     "clean": "npm run build:clean; npm run build:docs:clean; npm run test:clean",
     "pretest": "npm run build:test",
-    "test": "mocha --opts mocha.opts",
+    "test": "mocha --require esm --opts mocha.opts",
     "test:clean": "del test",
     "posttest": "npm run test:clean",
     "prebuild": "npm run lint && npm run build:clean",
@@ -26,7 +26,7 @@
     "docs:serve": "http-server ./docs",
     "docs:publish": "git subtree push --prefix docs origin gh-pages",
     "readme": "doctoc ./README.md",
-    "release": "npm run build && npm run docs && npm run readme",
+    "release": "npm run build",
     "lint": "tslint src/**",
     "lint:fix": "tslint src/** --fix",
     "version": "standard-version"
@@ -42,15 +42,15 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "http://github.com/steelsojka/lodash-decorators/issues"
+    "url": "https://github.com/akopachov/lodash-decorators/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/steelsojka/lodash-decorators"
+    "url": "https://github.com/akopachov/lodash-decorators"
   },
   "devDependencies": {
     "@types/chai": "^3.5.1",
-    "@types/lodash": "^4.14.109",
+    "@types/lodash-es": "^4.17.3",
     "@types/mocha": "^2.2.48",
     "@types/node": "^7.0.65",
     "@types/sinon": "^2.3.7",
@@ -58,8 +58,10 @@
     "del-cli": "^0.2.1",
     "doctoc": "^1.3.1",
     "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "esm": "^3.2.25",
     "http-server": "^0.11.1",
-    "lodash": "^4.17.10",
+    "lodash-es": "^4.17.15",
     "mocha": "^5.2.0",
     "sinon": "~1.14.1",
     "standard-version": "^4.4.0",
@@ -69,9 +71,9 @@
     "typescript": "~2.3.4"
   },
   "peerDependencies": {
-    "lodash": "4.x"
+    "lodash-es": "4.x"
   },
   "dependencies": {
-    "tslib": "^1.9.2"
+    "tslib": "^1.10.0"
   }
 }

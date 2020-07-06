@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 337,
+  "end": 351,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 337,
+    "end": 351,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 32,
+        "end": 35,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 32
+            "column": 35
           }
         },
         "specifiers": [
@@ -96,7 +96,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 23,
-          "end": 31,
+          "end": 34,
           "loc": {
             "start": {
               "line": 1,
@@ -104,21 +104,21 @@
             },
             "end": {
               "line": 1,
-              "column": 31
+              "column": 34
             }
           },
           "extra": {
-            "rawValue": "lodash",
-            "raw": "'lodash'"
+            "rawValue": "lodash-es",
+            "raw": "'lodash-es'"
           },
-          "value": "lodash"
+          "value": "lodash-es"
         },
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Used to copy over meta data from function to function.\n * If meta data is attached to a function. This can get lost\n * when wrapping functions. This tries to persist that.\n * @private\n ",
-            "start": 33,
-            "end": 227,
+            "value": "*\r\n * Used to copy over meta data from function to function.\r\n * If meta data is attached to a function. This can get lost\r\n * when wrapping functions. This tries to persist that.\r\n * @private\r\n ",
+            "start": 37,
+            "end": 236,
             "loc": {
               "start": {
                 "line": 2,
@@ -134,8 +134,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 228,
-        "end": 336,
+        "start": 238,
+        "end": 349,
         "loc": {
           "start": {
             "line": 8,
@@ -150,8 +150,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 235,
-          "end": 336,
+          "start": 245,
+          "end": 349,
           "loc": {
             "start": {
               "line": 8,
@@ -164,8 +164,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 244,
-            "end": 256,
+            "start": 254,
+            "end": 266,
             "loc": {
               "start": {
                 "line": 8,
@@ -186,8 +186,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 257,
-              "end": 259,
+              "start": 267,
+              "end": 269,
               "loc": {
                 "start": {
                   "line": 8,
@@ -203,8 +203,8 @@
             },
             {
               "type": "Identifier",
-              "start": 261,
-              "end": 265,
+              "start": 271,
+              "end": 275,
               "loc": {
                 "start": {
                   "line": 8,
@@ -221,8 +221,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 267,
-            "end": 336,
+            "start": 277,
+            "end": 349,
             "loc": {
               "start": {
                 "line": 8,
@@ -236,8 +236,8 @@
             "body": [
               {
                 "type": "ExpressionStatement",
-                "start": 273,
-                "end": 319,
+                "start": 284,
+                "end": 330,
                 "loc": {
                   "start": {
                     "line": 9,
@@ -250,8 +250,8 @@
                 },
                 "expression": {
                   "type": "CallExpression",
-                  "start": 273,
-                  "end": 318,
+                  "start": 284,
+                  "end": 329,
                   "loc": {
                     "start": {
                       "line": 9,
@@ -264,8 +264,8 @@
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 273,
-                    "end": 279,
+                    "start": 284,
+                    "end": 290,
                     "loc": {
                       "start": {
                         "line": 9,
@@ -282,8 +282,8 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 280,
-                      "end": 284,
+                      "start": 291,
+                      "end": 295,
                       "loc": {
                         "start": {
                           "line": 9,
@@ -299,8 +299,8 @@
                     },
                     {
                       "type": "ArrowFunctionExpression",
-                      "start": 286,
-                      "end": 317,
+                      "start": 297,
+                      "end": 328,
                       "loc": {
                         "start": {
                           "line": 9,
@@ -318,8 +318,8 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "start": 287,
-                          "end": 292,
+                          "start": 298,
+                          "end": 303,
                           "loc": {
                             "start": {
                               "line": 9,
@@ -335,8 +335,8 @@
                         },
                         {
                           "type": "Identifier",
-                          "start": 294,
-                          "end": 297,
+                          "start": 305,
+                          "end": 308,
                           "loc": {
                             "start": {
                               "line": 9,
@@ -353,8 +353,8 @@
                       ],
                       "body": {
                         "type": "AssignmentExpression",
-                        "start": 302,
-                        "end": 317,
+                        "start": 313,
+                        "end": 328,
                         "loc": {
                           "start": {
                             "line": 9,
@@ -368,8 +368,8 @@
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 302,
-                          "end": 309,
+                          "start": 313,
+                          "end": 320,
                           "loc": {
                             "start": {
                               "line": 9,
@@ -382,8 +382,8 @@
                           },
                           "object": {
                             "type": "Identifier",
-                            "start": 302,
-                            "end": 304,
+                            "start": 313,
+                            "end": 315,
                             "loc": {
                               "start": {
                                 "line": 9,
@@ -399,8 +399,8 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 305,
-                            "end": 308,
+                            "start": 316,
+                            "end": 319,
                             "loc": {
                               "start": {
                                 "line": 9,
@@ -418,8 +418,8 @@
                         },
                         "right": {
                           "type": "Identifier",
-                          "start": 312,
-                          "end": 317,
+                          "start": 323,
+                          "end": 328,
                           "loc": {
                             "start": {
                               "line": 9,
@@ -440,8 +440,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 324,
-                "end": 334,
+                "start": 336,
+                "end": 346,
                 "loc": {
                   "start": {
                     "line": 10,
@@ -454,8 +454,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 331,
-                  "end": 333,
+                  "start": 343,
+                  "end": 345,
                   "loc": {
                     "start": {
                       "line": 10,
@@ -476,9 +476,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Used to copy over meta data from function to function.\n * If meta data is attached to a function. This can get lost\n * when wrapping functions. This tries to persist that.\n * @private\n ",
-              "start": 33,
-              "end": 227,
+              "value": "*\r\n * Used to copy over meta data from function to function.\r\n * If meta data is attached to a function. This can get lost\r\n * when wrapping functions. This tries to persist that.\r\n * @private\r\n ",
+              "start": 37,
+              "end": 236,
               "loc": {
                 "start": {
                   "line": 2,
@@ -496,9 +496,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Used to copy over meta data from function to function.\n * If meta data is attached to a function. This can get lost\n * when wrapping functions. This tries to persist that.\n * @private\n ",
-            "start": 33,
-            "end": 227,
+            "value": "*\r\n * Used to copy over meta data from function to function.\r\n * If meta data is attached to a function. This can get lost\r\n * when wrapping functions. This tries to persist that.\r\n * @private\r\n ",
+            "start": 37,
+            "end": 236,
             "loc": {
               "start": {
                 "line": 2,
@@ -518,9 +518,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Used to copy over meta data from function to function.\n * If meta data is attached to a function. This can get lost\n * when wrapping functions. This tries to persist that.\n * @private\n ",
-      "start": 33,
-      "end": 227,
+      "value": "*\r\n * Used to copy over meta data from function to function.\r\n * If meta data is attached to a function. This can get lost\r\n * when wrapping functions. This tries to persist that.\r\n * @private\r\n ",
+      "start": 37,
+      "end": 236,
       "loc": {
         "start": {
           "line": 2,
@@ -539,7 +539,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -677,9 +677,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "lodash",
+      "value": "lodash-es",
       "start": 23,
-      "end": 31,
+      "end": 34,
       "loc": {
         "start": {
           "line": 1,
@@ -687,7 +687,7 @@
         },
         "end": {
           "line": 1,
-          "column": 31
+          "column": 34
         }
       }
     },
@@ -704,24 +704,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 31,
-      "end": 32,
+      "start": 34,
+      "end": 35,
       "loc": {
         "start": {
           "line": 1,
-          "column": 31
+          "column": 34
         },
         "end": {
           "line": 1,
-          "column": 32
+          "column": 35
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Used to copy over meta data from function to function.\n * If meta data is attached to a function. This can get lost\n * when wrapping functions. This tries to persist that.\n * @private\n ",
-      "start": 33,
-      "end": 227,
+      "value": "*\r\n * Used to copy over meta data from function to function.\r\n * If meta data is attached to a function. This can get lost\r\n * when wrapping functions. This tries to persist that.\r\n * @private\r\n ",
+      "start": 37,
+      "end": 236,
       "loc": {
         "start": {
           "line": 2,
@@ -748,8 +748,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 228,
-      "end": 234,
+      "start": 238,
+      "end": 244,
       "loc": {
         "start": {
           "line": 8,
@@ -775,8 +775,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 235,
-      "end": 243,
+      "start": 245,
+      "end": 253,
       "loc": {
         "start": {
           "line": 8,
@@ -801,8 +801,8 @@
         "binop": null
       },
       "value": "copyMetadata",
-      "start": 244,
-      "end": 256,
+      "start": 254,
+      "end": 266,
       "loc": {
         "start": {
           "line": 8,
@@ -826,8 +826,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 256,
-      "end": 257,
+      "start": 266,
+      "end": 267,
       "loc": {
         "start": {
           "line": 8,
@@ -852,8 +852,8 @@
         "binop": null
       },
       "value": "to",
-      "start": 257,
-      "end": 259,
+      "start": 267,
+      "end": 269,
       "loc": {
         "start": {
           "line": 8,
@@ -878,8 +878,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 259,
-      "end": 260,
+      "start": 269,
+      "end": 270,
       "loc": {
         "start": {
           "line": 8,
@@ -904,8 +904,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 261,
-      "end": 265,
+      "start": 271,
+      "end": 275,
       "loc": {
         "start": {
           "line": 8,
@@ -929,8 +929,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 265,
-      "end": 266,
+      "start": 275,
+      "end": 276,
       "loc": {
         "start": {
           "line": 8,
@@ -954,8 +954,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 267,
-      "end": 268,
+      "start": 277,
+      "end": 278,
       "loc": {
         "start": {
           "line": 8,
@@ -980,8 +980,8 @@
         "binop": null
       },
       "value": "forOwn",
-      "start": 273,
-      "end": 279,
+      "start": 284,
+      "end": 290,
       "loc": {
         "start": {
           "line": 9,
@@ -1005,8 +1005,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 279,
-      "end": 280,
+      "start": 290,
+      "end": 291,
       "loc": {
         "start": {
           "line": 9,
@@ -1031,8 +1031,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 280,
-      "end": 284,
+      "start": 291,
+      "end": 295,
       "loc": {
         "start": {
           "line": 9,
@@ -1057,8 +1057,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 284,
-      "end": 285,
+      "start": 295,
+      "end": 296,
       "loc": {
         "start": {
           "line": 9,
@@ -1082,8 +1082,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 286,
-      "end": 287,
+      "start": 297,
+      "end": 298,
       "loc": {
         "start": {
           "line": 9,
@@ -1108,8 +1108,8 @@
         "binop": null
       },
       "value": "value",
-      "start": 287,
-      "end": 292,
+      "start": 298,
+      "end": 303,
       "loc": {
         "start": {
           "line": 9,
@@ -1134,8 +1134,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 292,
-      "end": 293,
+      "start": 303,
+      "end": 304,
       "loc": {
         "start": {
           "line": 9,
@@ -1160,8 +1160,8 @@
         "binop": null
       },
       "value": "key",
-      "start": 294,
-      "end": 297,
+      "start": 305,
+      "end": 308,
       "loc": {
         "start": {
           "line": 9,
@@ -1185,8 +1185,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 297,
-      "end": 298,
+      "start": 308,
+      "end": 309,
       "loc": {
         "start": {
           "line": 9,
@@ -1211,8 +1211,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 299,
-      "end": 301,
+      "start": 310,
+      "end": 312,
       "loc": {
         "start": {
           "line": 9,
@@ -1237,8 +1237,8 @@
         "binop": null
       },
       "value": "to",
-      "start": 302,
-      "end": 304,
+      "start": 313,
+      "end": 315,
       "loc": {
         "start": {
           "line": 9,
@@ -1263,8 +1263,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 304,
-      "end": 305,
+      "start": 315,
+      "end": 316,
       "loc": {
         "start": {
           "line": 9,
@@ -1289,8 +1289,8 @@
         "binop": null
       },
       "value": "key",
-      "start": 305,
-      "end": 308,
+      "start": 316,
+      "end": 319,
       "loc": {
         "start": {
           "line": 9,
@@ -1315,8 +1315,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 308,
-      "end": 309,
+      "start": 319,
+      "end": 320,
       "loc": {
         "start": {
           "line": 9,
@@ -1342,8 +1342,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 310,
-      "end": 311,
+      "start": 321,
+      "end": 322,
       "loc": {
         "start": {
           "line": 9,
@@ -1368,8 +1368,8 @@
         "binop": null
       },
       "value": "value",
-      "start": 312,
-      "end": 317,
+      "start": 323,
+      "end": 328,
       "loc": {
         "start": {
           "line": 9,
@@ -1393,8 +1393,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 317,
-      "end": 318,
+      "start": 328,
+      "end": 329,
       "loc": {
         "start": {
           "line": 9,
@@ -1419,8 +1419,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 318,
-      "end": 319,
+      "start": 329,
+      "end": 330,
       "loc": {
         "start": {
           "line": 9,
@@ -1447,8 +1447,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 324,
-      "end": 330,
+      "start": 336,
+      "end": 342,
       "loc": {
         "start": {
           "line": 10,
@@ -1473,8 +1473,8 @@
         "binop": null
       },
       "value": "to",
-      "start": 331,
-      "end": 333,
+      "start": 343,
+      "end": 345,
       "loc": {
         "start": {
           "line": 10,
@@ -1499,8 +1499,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 333,
-      "end": 334,
+      "start": 345,
+      "end": 346,
       "loc": {
         "start": {
           "line": 10,
@@ -1524,8 +1524,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 335,
-      "end": 336,
+      "start": 348,
+      "end": 349,
       "loc": {
         "start": {
           "line": 11,
@@ -1550,8 +1550,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 337,
-      "end": 337,
+      "start": 351,
+      "end": 351,
       "loc": {
         "start": {
           "line": 12,

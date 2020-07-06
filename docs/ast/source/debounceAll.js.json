@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1773,
+  "end": 1895,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 44,
+      "line": 47,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1773,
+    "end": 1895,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 44,
+        "line": 47,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 34,
+        "end": 37,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 34
+            "column": 37
           }
         },
         "specifiers": [
@@ -96,7 +96,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 25,
-          "end": 33,
+          "end": 36,
           "loc": {
             "start": {
               "line": 1,
@@ -104,20 +104,20 @@
             },
             "end": {
               "line": 1,
-              "column": 33
+              "column": 36
             }
           },
           "extra": {
-            "rawValue": "lodash",
-            "raw": "'lodash'"
+            "rawValue": "lodash-es",
+            "raw": "'lodash-es'"
           },
-          "value": "lodash"
+          "value": "lodash-es"
         }
       },
       {
         "type": "ImportDeclaration",
-        "start": 35,
-        "end": 97,
+        "start": 39,
+        "end": 101,
         "loc": {
           "start": {
             "line": 2,
@@ -131,8 +131,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 44,
-            "end": 59,
+            "start": 48,
+            "end": 63,
             "loc": {
               "start": {
                 "line": 2,
@@ -145,8 +145,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 44,
-              "end": 59,
+              "start": 48,
+              "end": 63,
               "loc": {
                 "start": {
                   "line": 2,
@@ -162,8 +162,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 44,
-              "end": 59,
+              "start": 48,
+              "end": 63,
               "loc": {
                 "start": {
                   "line": 2,
@@ -180,8 +180,8 @@
           },
           {
             "type": "ImportSpecifier",
-            "start": 61,
-            "end": 77,
+            "start": 65,
+            "end": 81,
             "loc": {
               "start": {
                 "line": 2,
@@ -194,8 +194,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 61,
-              "end": 77,
+              "start": 65,
+              "end": 81,
               "loc": {
                 "start": {
                   "line": 2,
@@ -211,8 +211,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 61,
-              "end": 77,
+              "start": 65,
+              "end": 81,
               "loc": {
                 "start": {
                   "line": 2,
@@ -230,8 +230,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 85,
-          "end": 96,
+          "start": 89,
+          "end": 100,
           "loc": {
             "start": {
               "line": 2,
@@ -251,8 +251,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 98,
-        "end": 149,
+        "start": 103,
+        "end": 154,
         "loc": {
           "start": {
             "line": 3,
@@ -266,8 +266,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 107,
-            "end": 125,
+            "start": 112,
+            "end": 130,
             "loc": {
               "start": {
                 "line": 3,
@@ -280,8 +280,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 107,
-              "end": 125,
+              "start": 112,
+              "end": 130,
               "loc": {
                 "start": {
                   "line": 3,
@@ -297,8 +297,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 107,
-              "end": 125,
+              "start": 112,
+              "end": 130,
               "loc": {
                 "start": {
                   "line": 3,
@@ -316,8 +316,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 133,
-          "end": 148,
+          "start": 138,
+          "end": 153,
           "loc": {
             "start": {
               "line": 3,
@@ -333,257 +333,413 @@
             "raw": "'./applicators'"
           },
           "value": "./applicators"
-        },
-        "trailingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\n * Subsequent calls to the debounced function return the result of the last func invocation.\n *\n * The debounce state is shared across all instances of the class.\n *\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\n *\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\n *\n * @param {number} [wait=0] The number in milliseconds to delay.\n * @param {DebounceOptions} [options] The options object.\n * @example\n *\n * class MyClass {\n *   value = 100;\n *\n *   @DebounceAll(10)\n *   add(a) {\n *     this.value += a;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.add(10);\n * myClass.add(50);\n * myClass.add(20);\n *\n * myClass.value; // => 100;\n *\n * setTimeout(() => {\n *   myClass.value; // => 120;\n * }, 11);\n ",
-            "start": 150,
-            "end": 1587,
-            "loc": {
-              "start": {
-                "line": 4,
-                "column": 0
-              },
-              "end": {
-                "line": 40,
-                "column": 3
-              }
-            }
-          }
-        ]
+        }
       },
       {
-        "type": "ExportNamedDeclaration",
-        "start": 1588,
-        "end": 1705,
+        "type": "Identifier",
+        "start": 156,
+        "end": 264,
         "loc": {
           "start": {
-            "line": 41,
+            "line": 4,
             "column": 0
           },
           "end": {
-            "line": 41,
-            "column": 117
+            "line": 4,
+            "column": 108
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 162,
+            "end": 263,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 6
+              },
+              "end": {
+                "line": 4,
+                "column": 107
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 162,
+              "end": 171,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 6
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15
+                },
+                "identifierName": "decorator"
+              },
+              "name": "decorator"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 174,
+              "end": 263,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 18
+                },
+                "end": {
+                  "line": 4,
+                  "column": 107
+                }
+              },
+              "callee": {
+                "type": "MemberExpression",
+                "start": 174,
+                "end": 206,
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 18
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 50
+                  }
+                },
+                "object": {
+                  "type": "Identifier",
+                  "start": 174,
+                  "end": 190,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 34
+                    },
+                    "identifierName": "DecoratorFactory"
+                  },
+                  "name": "DecoratorFactory"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 191,
+                  "end": 206,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 50
+                    },
+                    "identifierName": "createDecorator"
+                  },
+                  "name": "createDecorator"
+                },
+                "computed": false
+              },
+              "arguments": [
+                {
+                  "type": "NewExpression",
+                  "start": 207,
+                  "end": 262,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 51
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 106
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 211,
+                    "end": 226,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 55
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 70
+                      },
+                      "identifierName": "DecoratorConfig"
+                    },
+                    "name": "DecoratorConfig"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 227,
+                      "end": 235,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 71
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 79
+                        },
+                        "identifierName": "debounce"
+                      },
+                      "name": "debounce"
+                    },
+                    {
+                      "type": "NewExpression",
+                      "start": 237,
+                      "end": 261,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 81
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 105
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 241,
+                        "end": 259,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 85
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 103
+                          },
+                          "identifierName": "PreValueApplicator"
+                        },
+                        "name": "PreValueApplicator"
+                      },
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "const",
+        "trailingComments": [],
+        "name": "_",
+        "leadingComments": []
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 1741,
+        "end": 1826,
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 0
+          },
+          "end": {
+            "line": 44,
+            "column": 1
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
-          "type": "VariableDeclaration",
-          "start": 1595,
-          "end": 1705,
+          "type": "FunctionDeclaration",
+          "start": 1748,
+          "end": 1826,
           "loc": {
             "start": {
-              "line": 41,
+              "line": 42,
               "column": 7
             },
             "end": {
-              "line": 41,
-              "column": 117
+              "line": 44,
+              "column": 1
             }
           },
-          "declarations": [
+          "id": {
+            "type": "Identifier",
+            "start": 1757,
+            "end": 1768,
+            "loc": {
+              "start": {
+                "line": 42,
+                "column": 16
+              },
+              "end": {
+                "line": 42,
+                "column": 27
+              },
+              "identifierName": "DebounceAll"
+            },
+            "name": "DebounceAll",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [
             {
-              "type": "VariableDeclarator",
-              "start": 1601,
-              "end": 1704,
+              "type": "Identifier",
+              "start": 1769,
+              "end": 1773,
               "loc": {
                 "start": {
-                  "line": 41,
-                  "column": 13
+                  "line": 42,
+                  "column": 28
                 },
                 "end": {
-                  "line": 41,
-                  "column": 116
-                }
-              },
-              "id": {
-                "type": "Identifier",
-                "start": 1601,
-                "end": 1612,
-                "loc": {
-                  "start": {
-                    "line": 41,
-                    "column": 13
-                  },
-                  "end": {
-                    "line": 41,
-                    "column": 24
-                  },
-                  "identifierName": "DebounceAll"
+                  "line": 42,
+                  "column": 32
                 },
-                "name": "DebounceAll",
-                "leadingComments": null
+                "identifierName": "wait"
               },
-              "init": {
-                "type": "CallExpression",
-                "start": 1615,
-                "end": 1704,
-                "loc": {
-                  "start": {
-                    "line": 41,
-                    "column": 27
-                  },
-                  "end": {
-                    "line": 41,
-                    "column": 116
-                  }
+              "name": "wait"
+            },
+            {
+              "type": "Identifier",
+              "start": 1775,
+              "end": 1782,
+              "loc": {
+                "start": {
+                  "line": 42,
+                  "column": 34
                 },
-                "callee": {
-                  "type": "MemberExpression",
-                  "start": 1615,
-                  "end": 1647,
-                  "loc": {
-                    "start": {
-                      "line": 41,
-                      "column": 27
-                    },
-                    "end": {
-                      "line": 41,
-                      "column": 59
-                    }
-                  },
-                  "object": {
-                    "type": "Identifier",
-                    "start": 1615,
-                    "end": 1631,
-                    "loc": {
-                      "start": {
-                        "line": 41,
-                        "column": 27
-                      },
-                      "end": {
-                        "line": 41,
-                        "column": 43
-                      },
-                      "identifierName": "DecoratorFactory"
-                    },
-                    "name": "DecoratorFactory"
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "start": 1632,
-                    "end": 1647,
-                    "loc": {
-                      "start": {
-                        "line": 41,
-                        "column": 44
-                      },
-                      "end": {
-                        "line": 41,
-                        "column": 59
-                      },
-                      "identifierName": "createDecorator"
-                    },
-                    "name": "createDecorator"
-                  },
-                  "computed": false
+                "end": {
+                  "line": 42,
+                  "column": 41
                 },
-                "arguments": [
-                  {
-                    "type": "NewExpression",
-                    "start": 1648,
-                    "end": 1703,
-                    "loc": {
-                      "start": {
-                        "line": 41,
-                        "column": 60
-                      },
-                      "end": {
-                        "line": 41,
-                        "column": 115
-                      }
-                    },
-                    "callee": {
-                      "type": "Identifier",
-                      "start": 1652,
-                      "end": 1667,
-                      "loc": {
-                        "start": {
-                          "line": 41,
-                          "column": 64
-                        },
-                        "end": {
-                          "line": 41,
-                          "column": 79
-                        },
-                        "identifierName": "DecoratorConfig"
-                      },
-                      "name": "DecoratorConfig"
-                    },
-                    "arguments": [
-                      {
-                        "type": "Identifier",
-                        "start": 1668,
-                        "end": 1676,
-                        "loc": {
-                          "start": {
-                            "line": 41,
-                            "column": 80
-                          },
-                          "end": {
-                            "line": 41,
-                            "column": 88
-                          },
-                          "identifierName": "debounce"
-                        },
-                        "name": "debounce"
-                      },
-                      {
-                        "type": "NewExpression",
-                        "start": 1678,
-                        "end": 1702,
-                        "loc": {
-                          "start": {
-                            "line": 41,
-                            "column": 90
-                          },
-                          "end": {
-                            "line": 41,
-                            "column": 114
-                          }
-                        },
-                        "callee": {
-                          "type": "Identifier",
-                          "start": 1682,
-                          "end": 1700,
-                          "loc": {
-                            "start": {
-                              "line": 41,
-                              "column": 94
-                            },
-                            "end": {
-                              "line": 41,
-                              "column": 112
-                            },
-                            "identifierName": "PreValueApplicator"
-                          },
-                          "name": "PreValueApplicator"
-                        },
-                        "arguments": []
-                      }
-                    ]
-                  }
-                ]
+                "identifierName": "options"
               },
-              "leadingComments": null
+              "name": "options"
             }
           ],
-          "kind": "const",
+          "body": {
+            "type": "BlockStatement",
+            "start": 1784,
+            "end": 1826,
+            "loc": {
+              "start": {
+                "line": 42,
+                "column": 43
+              },
+              "end": {
+                "line": 44,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 1791,
+                "end": 1823,
+                "loc": {
+                  "start": {
+                    "line": 43,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 43,
+                    "column": 36
+                  }
+                },
+                "argument": {
+                  "type": "CallExpression",
+                  "start": 1798,
+                  "end": 1822,
+                  "loc": {
+                    "start": {
+                      "line": 43,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 43,
+                      "column": 35
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 1798,
+                    "end": 1807,
+                    "loc": {
+                      "start": {
+                        "line": 43,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 43,
+                        "column": 20
+                      },
+                      "identifierName": "decorator"
+                    },
+                    "name": "decorator"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 1808,
+                      "end": 1812,
+                      "loc": {
+                        "start": {
+                          "line": 43,
+                          "column": 21
+                        },
+                        "end": {
+                          "line": 43,
+                          "column": 25
+                        },
+                        "identifierName": "wait"
+                      },
+                      "name": "wait"
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 1814,
+                      "end": 1821,
+                      "loc": {
+                        "start": {
+                          "line": 43,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 43,
+                          "column": 34
+                        },
+                        "identifierName": "options"
+                      },
+                      "name": "options"
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\n * Subsequent calls to the debounced function return the result of the last func invocation.\n *\n * The debounce state is shared across all instances of the class.\n *\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\n *\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\n *\n * @param {number} [wait=0] The number in milliseconds to delay.\n * @param {DebounceOptions} [options] The options object.\n * @example\n *\n * class MyClass {\n *   value = 100;\n *\n *   @DebounceAll(10)\n *   add(a) {\n *     this.value += a;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.add(10);\n * myClass.add(50);\n * myClass.add(20);\n *\n * myClass.value; // => 100;\n *\n * setTimeout(() => {\n *   myClass.value; // => 120;\n * }, 11);\n ",
-              "start": 150,
-              "end": 1587,
+              "value": "*\r\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\r\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\r\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\r\n * Subsequent calls to the debounced function return the result of the last func invocation.\r\n *\r\n * The debounce state is shared across all instances of the class.\r\n *\r\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\r\n *\r\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\r\n *\r\n * @param {number} [wait=0] The number in milliseconds to delay.\r\n * @param {DebounceOptions} [options] The options object.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   value = 100;\r\n *\r\n *   @DebounceAll(10)\r\n *   add(a) {\r\n *     this.value += a;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.add(10);\r\n * myClass.add(50);\r\n * myClass.add(20);\r\n *\r\n * myClass.value; // => 100;\r\n *\r\n * setTimeout(() => {\r\n *   myClass.value; // => 120;\r\n * }, 11);\r\n ",
+              "start": 266,
+              "end": 1739,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 5,
                   "column": 0
                 },
                 "end": {
-                  "line": 40,
+                  "line": 41,
                   "column": 3
                 }
               }
@@ -594,16 +750,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\n * Subsequent calls to the debounced function return the result of the last func invocation.\n *\n * The debounce state is shared across all instances of the class.\n *\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\n *\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\n *\n * @param {number} [wait=0] The number in milliseconds to delay.\n * @param {DebounceOptions} [options] The options object.\n * @example\n *\n * class MyClass {\n *   value = 100;\n *\n *   @DebounceAll(10)\n *   add(a) {\n *     this.value += a;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.add(10);\n * myClass.add(50);\n * myClass.add(20);\n *\n * myClass.value; // => 100;\n *\n * setTimeout(() => {\n *   myClass.value; // => 120;\n * }, 11);\n ",
-            "start": 150,
-            "end": 1587,
+            "value": "*\r\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\r\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\r\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\r\n * Subsequent calls to the debounced function return the result of the last func invocation.\r\n *\r\n * The debounce state is shared across all instances of the class.\r\n *\r\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\r\n *\r\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\r\n *\r\n * @param {number} [wait=0] The number in milliseconds to delay.\r\n * @param {DebounceOptions} [options] The options object.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   value = 100;\r\n *\r\n *   @DebounceAll(10)\r\n *   add(a) {\r\n *     this.value += a;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.add(10);\r\n * myClass.add(50);\r\n * myClass.add(20);\r\n *\r\n * myClass.value; // => 100;\r\n *\r\n * setTimeout(() => {\r\n *   myClass.value; // => 120;\r\n * }, 11);\r\n ",
+            "start": 266,
+            "end": 1739,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 5,
                 "column": 0
               },
               "end": {
-                "line": 40,
+                "line": 41,
                 "column": 3
               }
             }
@@ -612,15 +768,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 1706,
-        "end": 1744,
+        "start": 1828,
+        "end": 1866,
         "loc": {
           "start": {
-            "line": 42,
+            "line": 45,
             "column": 0
           },
           "end": {
-            "line": 42,
+            "line": 45,
             "column": 38
           }
         },
@@ -628,29 +784,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 1715,
-            "end": 1741,
+            "start": 1837,
+            "end": 1863,
             "loc": {
               "start": {
-                "line": 42,
+                "line": 45,
                 "column": 9
               },
               "end": {
-                "line": 42,
+                "line": 45,
                 "column": 35
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 1715,
-              "end": 1726,
+              "start": 1837,
+              "end": 1848,
               "loc": {
                 "start": {
-                  "line": 42,
+                  "line": 45,
                   "column": 9
                 },
                 "end": {
-                  "line": 42,
+                  "line": 45,
                   "column": 20
                 },
                 "identifierName": "DebounceAll"
@@ -659,15 +815,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 1730,
-              "end": 1741,
+              "start": 1852,
+              "end": 1863,
               "loc": {
                 "start": {
-                  "line": 42,
+                  "line": 45,
                   "column": 24
                 },
                 "end": {
-                  "line": 42,
+                  "line": 45,
                   "column": 35
                 },
                 "identifierName": "debounceAll"
@@ -679,37 +835,273 @@
         "source": null
       },
       {
-        "type": "ExportDefaultDeclaration",
-        "start": 1745,
-        "end": 1772,
+        "type": "Identifier",
+        "start": 1868,
+        "end": 1893,
         "loc": {
           "start": {
-            "line": 43,
+            "line": 46,
             "column": 0
           },
           "end": {
-            "line": 43,
-            "column": 27
+            "line": 46,
+            "column": 25
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 1760,
-          "end": 1771,
+          "start": 1883,
+          "end": 1892,
           "loc": {
             "start": {
-              "line": 43,
+              "line": 46,
               "column": 15
             },
             "end": {
-              "line": 43,
-              "column": 26
+              "line": 46,
+              "column": 24
             },
-            "identifierName": "DebounceAll"
+            "identifierName": "decorator"
           },
-          "name": "DebounceAll",
-          "leadingComments": [],
-          "trailingComments": []
+          "name": "decorator"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 1868,
+        "end": 1893,
+        "loc": {
+          "start": {
+            "line": 46,
+            "column": 0
+          },
+          "end": {
+            "line": 46,
+            "column": 25
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 156,
+          "end": 264,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 108
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 162,
+              "end": 263,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 6
+                },
+                "end": {
+                  "line": 4,
+                  "column": 107
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 162,
+                "end": 171,
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 15
+                  },
+                  "identifierName": "decorator"
+                },
+                "name": "decorator"
+              },
+              "init": {
+                "type": "CallExpression",
+                "start": 174,
+                "end": 263,
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 18
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 107
+                  }
+                },
+                "callee": {
+                  "type": "MemberExpression",
+                  "start": 174,
+                  "end": 206,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 50
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 174,
+                    "end": 190,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 34
+                      },
+                      "identifierName": "DecoratorFactory"
+                    },
+                    "name": "DecoratorFactory"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 191,
+                    "end": 206,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 50
+                      },
+                      "identifierName": "createDecorator"
+                    },
+                    "name": "createDecorator"
+                  },
+                  "computed": false
+                },
+                "arguments": [
+                  {
+                    "type": "NewExpression",
+                    "start": 207,
+                    "end": 262,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 51
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 106
+                      }
+                    },
+                    "callee": {
+                      "type": "Identifier",
+                      "start": 211,
+                      "end": 226,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 55
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 70
+                        },
+                        "identifierName": "DecoratorConfig"
+                      },
+                      "name": "DecoratorConfig"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "start": 227,
+                        "end": 235,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 71
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 79
+                          },
+                          "identifierName": "debounce"
+                        },
+                        "name": "debounce"
+                      },
+                      {
+                        "type": "NewExpression",
+                        "start": 237,
+                        "end": 261,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 81
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 105
+                          }
+                        },
+                        "callee": {
+                          "type": "Identifier",
+                          "start": 241,
+                          "end": 259,
+                          "loc": {
+                            "start": {
+                              "line": 4,
+                              "column": 85
+                            },
+                            "end": {
+                              "line": 4,
+                              "column": 103
+                            },
+                            "identifierName": "PreValueApplicator"
+                          },
+                          "name": "PreValueApplicator"
+                        },
+                        "arguments": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "kind": "const",
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\r\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\r\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\r\n * Subsequent calls to the debounced function return the result of the last func invocation.\r\n *\r\n * The debounce state is shared across all instances of the class.\r\n *\r\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\r\n *\r\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\r\n *\r\n * @param {number} [wait=0] The number in milliseconds to delay.\r\n * @param {DebounceOptions} [options] The options object.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   value = 100;\r\n *\r\n *   @DebounceAll(10)\r\n *   add(a) {\r\n *     this.value += a;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.add(10);\r\n * myClass.add(50);\r\n * myClass.add(20);\r\n *\r\n * myClass.value; // => 100;\r\n *\r\n * setTimeout(() => {\r\n *   myClass.value; // => 120;\r\n * }, 11);\r\n ",
+              "start": 266,
+              "end": 1739,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0
+                },
+                "end": {
+                  "line": 41,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "leadingComments": []
         }
       }
     ],
@@ -718,16 +1110,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\n * Subsequent calls to the debounced function return the result of the last func invocation.\n *\n * The debounce state is shared across all instances of the class.\n *\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\n *\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\n *\n * @param {number} [wait=0] The number in milliseconds to delay.\n * @param {DebounceOptions} [options] The options object.\n * @example\n *\n * class MyClass {\n *   value = 100;\n *\n *   @DebounceAll(10)\n *   add(a) {\n *     this.value += a;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.add(10);\n * myClass.add(50);\n * myClass.add(20);\n *\n * myClass.value; // => 100;\n *\n * setTimeout(() => {\n *   myClass.value; // => 120;\n * }, 11);\n ",
-      "start": 150,
-      "end": 1587,
+      "value": "*\r\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\r\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\r\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\r\n * Subsequent calls to the debounced function return the result of the last func invocation.\r\n *\r\n * The debounce state is shared across all instances of the class.\r\n *\r\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\r\n *\r\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\r\n *\r\n * @param {number} [wait=0] The number in milliseconds to delay.\r\n * @param {DebounceOptions} [options] The options object.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   value = 100;\r\n *\r\n *   @DebounceAll(10)\r\n *   add(a) {\r\n *     this.value += a;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.add(10);\r\n * myClass.add(50);\r\n * myClass.add(20);\r\n *\r\n * myClass.value; // => 100;\r\n *\r\n * setTimeout(() => {\r\n *   myClass.value; // => 120;\r\n * }, 11);\r\n ",
+      "start": 266,
+      "end": 1739,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 5,
           "column": 0
         },
         "end": {
-          "line": 40,
+          "line": 41,
           "column": 3
         }
       }
@@ -739,7 +1131,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -877,9 +1269,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "lodash",
+      "value": "lodash-es",
       "start": 25,
-      "end": 33,
+      "end": 36,
       "loc": {
         "start": {
           "line": 1,
@@ -887,7 +1279,7 @@
         },
         "end": {
           "line": 1,
-          "column": 33
+          "column": 36
         }
       }
     },
@@ -904,16 +1296,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 33,
-      "end": 34,
+      "start": 36,
+      "end": 37,
       "loc": {
         "start": {
           "line": 1,
-          "column": 33
+          "column": 36
         },
         "end": {
           "line": 1,
-          "column": 34
+          "column": 37
         }
       }
     },
@@ -922,7 +1314,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -932,8 +1324,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 35,
-      "end": 41,
+      "start": 39,
+      "end": 45,
       "loc": {
         "start": {
           "line": 2,
@@ -957,8 +1349,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 42,
-      "end": 43,
+      "start": 46,
+      "end": 47,
       "loc": {
         "start": {
           "line": 2,
@@ -983,8 +1375,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 44,
-      "end": 59,
+      "start": 48,
+      "end": 63,
       "loc": {
         "start": {
           "line": 2,
@@ -1009,8 +1401,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 59,
-      "end": 60,
+      "start": 63,
+      "end": 64,
       "loc": {
         "start": {
           "line": 2,
@@ -1035,8 +1427,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 61,
-      "end": 77,
+      "start": 65,
+      "end": 81,
       "loc": {
         "start": {
           "line": 2,
@@ -1060,8 +1452,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 78,
-      "end": 79,
+      "start": 82,
+      "end": 83,
       "loc": {
         "start": {
           "line": 2,
@@ -1086,8 +1478,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 80,
-      "end": 84,
+      "start": 84,
+      "end": 88,
       "loc": {
         "start": {
           "line": 2,
@@ -1113,8 +1505,8 @@
         "updateContext": null
       },
       "value": "./factory",
-      "start": 85,
-      "end": 96,
+      "start": 89,
+      "end": 100,
       "loc": {
         "start": {
           "line": 2,
@@ -1139,8 +1531,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 96,
-      "end": 97,
+      "start": 100,
+      "end": 101,
       "loc": {
         "start": {
           "line": 2,
@@ -1157,7 +1549,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1167,8 +1559,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 98,
-      "end": 104,
+      "start": 103,
+      "end": 109,
       "loc": {
         "start": {
           "line": 3,
@@ -1192,8 +1584,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 105,
-      "end": 106,
+      "start": 110,
+      "end": 111,
       "loc": {
         "start": {
           "line": 3,
@@ -1218,8 +1610,8 @@
         "binop": null
       },
       "value": "PreValueApplicator",
-      "start": 107,
-      "end": 125,
+      "start": 112,
+      "end": 130,
       "loc": {
         "start": {
           "line": 3,
@@ -1243,8 +1635,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 126,
-      "end": 127,
+      "start": 131,
+      "end": 132,
       "loc": {
         "start": {
           "line": 3,
@@ -1269,8 +1661,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 128,
-      "end": 132,
+      "start": 133,
+      "end": 137,
       "loc": {
         "start": {
           "line": 3,
@@ -1296,8 +1688,8 @@
         "updateContext": null
       },
       "value": "./applicators",
-      "start": 133,
-      "end": 148,
+      "start": 138,
+      "end": 153,
       "loc": {
         "start": {
           "line": 3,
@@ -1322,8 +1714,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 148,
-      "end": 149,
+      "start": 153,
+      "end": 154,
       "loc": {
         "start": {
           "line": 3,
@@ -1336,17 +1728,512 @@
       }
     },
     {
-      "type": "CommentBlock",
-      "value": "*\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\n * Subsequent calls to the debounced function return the result of the last func invocation.\n *\n * The debounce state is shared across all instances of the class.\n *\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\n *\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\n *\n * @param {number} [wait=0] The number in milliseconds to delay.\n * @param {DebounceOptions} [options] The options object.\n * @example\n *\n * class MyClass {\n *   value = 100;\n *\n *   @DebounceAll(10)\n *   add(a) {\n *     this.value += a;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.add(10);\n * myClass.add(50);\n * myClass.add(20);\n *\n * myClass.value; // => 100;\n *\n * setTimeout(() => {\n *   myClass.value; // => 120;\n * }, 11);\n ",
-      "start": 150,
-      "end": 1587,
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 156,
+      "end": 161,
       "loc": {
         "start": {
           "line": 4,
           "column": 0
         },
         "end": {
-          "line": 40,
+          "line": 4,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "decorator",
+      "start": 162,
+      "end": 171,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 6
+        },
+        "end": {
+          "line": 4,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 172,
+      "end": 173,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 16
+        },
+        "end": {
+          "line": 4,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "DecoratorFactory",
+      "start": 174,
+      "end": 190,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 18
+        },
+        "end": {
+          "line": 4,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 190,
+      "end": 191,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 34
+        },
+        "end": {
+          "line": 4,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "createDecorator",
+      "start": 191,
+      "end": 206,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 35
+        },
+        "end": {
+          "line": 4,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 206,
+      "end": 207,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 50
+        },
+        "end": {
+          "line": 4,
+          "column": 51
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 207,
+      "end": 210,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 51
+        },
+        "end": {
+          "line": 4,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "DecoratorConfig",
+      "start": 211,
+      "end": 226,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 55
+        },
+        "end": {
+          "line": 4,
+          "column": 70
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 226,
+      "end": 227,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 70
+        },
+        "end": {
+          "line": 4,
+          "column": 71
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "debounce",
+      "start": 227,
+      "end": 235,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 71
+        },
+        "end": {
+          "line": 4,
+          "column": 79
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 235,
+      "end": 236,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 79
+        },
+        "end": {
+          "line": 4,
+          "column": 80
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 237,
+      "end": 240,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 81
+        },
+        "end": {
+          "line": 4,
+          "column": 84
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "PreValueApplicator",
+      "start": 241,
+      "end": 259,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 85
+        },
+        "end": {
+          "line": 4,
+          "column": 103
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 259,
+      "end": 260,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 103
+        },
+        "end": {
+          "line": 4,
+          "column": 104
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 260,
+      "end": 261,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 104
+        },
+        "end": {
+          "line": 4,
+          "column": 105
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 261,
+      "end": 262,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 105
+        },
+        "end": {
+          "line": 4,
+          "column": 106
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 262,
+      "end": 263,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 106
+        },
+        "end": {
+          "line": 4,
+          "column": 107
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 263,
+      "end": 264,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 107
+        },
+        "end": {
+          "line": 4,
+          "column": 108
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.\r\n * The debounced function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.\r\n * Provide options to indicate whether func should be invoked on the leading and/or trailing edge of the wait timeout. The func is invoked with the last arguments provided to the debounced function.\r\n * Subsequent calls to the debounced function return the result of the last func invocation.\r\n *\r\n * The debounce state is shared across all instances of the class.\r\n *\r\n * Note: If leading and trailing options are true, func is invoked on the trailing edge of the timeout only if the debounced function is invoked more than once during the wait timeout.\r\n *\r\n * If wait is 0 and leading is false, func invocation is deferred until to the next tick, similar to setTimeout with a timeout of 0.\r\n *\r\n * @param {number} [wait=0] The number in milliseconds to delay.\r\n * @param {DebounceOptions} [options] The options object.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   value = 100;\r\n *\r\n *   @DebounceAll(10)\r\n *   add(a) {\r\n *     this.value += a;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.add(10);\r\n * myClass.add(50);\r\n * myClass.add(20);\r\n *\r\n * myClass.value; // => 100;\r\n *\r\n * setTimeout(() => {\r\n *   myClass.value; // => 120;\r\n * }, 11);\r\n ",
+      "start": 266,
+      "end": 1739,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
           "column": 3
         }
       }
@@ -1366,44 +2253,43 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1588,
-      "end": 1594,
+      "start": 1741,
+      "end": 1747,
       "loc": {
         "start": {
-          "line": 41,
+          "line": 42,
           "column": 0
         },
         "end": {
-          "line": 41,
+          "line": 42,
           "column": 6
         }
       }
     },
     {
       "type": {
-        "label": "const",
-        "keyword": "const",
+        "label": "function",
+        "keyword": "function",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null,
-        "updateContext": null
+        "binop": null
       },
-      "value": "const",
-      "start": 1595,
-      "end": 1600,
+      "value": "function",
+      "start": 1748,
+      "end": 1756,
       "loc": {
         "start": {
-          "line": 41,
+          "line": 42,
           "column": 7
         },
         "end": {
-          "line": 41,
-          "column": 12
+          "line": 42,
+          "column": 15
         }
       }
     },
@@ -1420,50 +2306,23 @@
         "binop": null
       },
       "value": "DebounceAll",
-      "start": 1601,
-      "end": 1612,
+      "start": 1757,
+      "end": 1768,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 13
+          "line": 42,
+          "column": 16
         },
         "end": {
-          "line": 41,
-          "column": 24
+          "line": 42,
+          "column": 27
         }
       }
     },
     {
       "type": {
-        "label": "=",
+        "label": "(",
         "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 1613,
-      "end": 1614,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 25
-        },
-        "end": {
-          "line": 41,
-          "column": 26
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
         "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
@@ -1472,43 +2331,16 @@
         "postfix": false,
         "binop": null
       },
-      "value": "DecoratorFactory",
-      "start": 1615,
-      "end": 1631,
+      "start": 1768,
+      "end": 1769,
       "loc": {
         "start": {
-          "line": 41,
+          "line": 42,
           "column": 27
         },
         "end": {
-          "line": 41,
-          "column": 43
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ".",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1631,
-      "end": 1632,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 43
-        },
-        "end": {
-          "line": 41,
-          "column": 44
+          "line": 42,
+          "column": 28
         }
       }
     },
@@ -1524,147 +2356,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "createDecorator",
-      "start": 1632,
-      "end": 1647,
+      "value": "wait",
+      "start": 1769,
+      "end": 1773,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 44
+          "line": 42,
+          "column": 28
         },
         "end": {
-          "line": 41,
-          "column": 59
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1647,
-      "end": 1648,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 59
-        },
-        "end": {
-          "line": 41,
-          "column": 60
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "new",
-        "keyword": "new",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "new",
-      "start": 1648,
-      "end": 1651,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 60
-        },
-        "end": {
-          "line": 41,
-          "column": 63
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "DecoratorConfig",
-      "start": 1652,
-      "end": 1667,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 64
-        },
-        "end": {
-          "line": 41,
-          "column": 79
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1667,
-      "end": 1668,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 79
-        },
-        "end": {
-          "line": 41,
-          "column": 80
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "debounce",
-      "start": 1668,
-      "end": 1676,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 80
-        },
-        "end": {
-          "line": 41,
-          "column": 88
+          "line": 42,
+          "column": 32
         }
       }
     },
@@ -1681,44 +2383,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1676,
-      "end": 1677,
+      "start": 1773,
+      "end": 1774,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 88
+          "line": 42,
+          "column": 32
         },
         "end": {
-          "line": 41,
-          "column": 89
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "new",
-        "keyword": "new",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "new",
-      "start": 1678,
-      "end": 1681,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 90
-        },
-        "end": {
-          "line": 41,
-          "column": 93
+          "line": 42,
+          "column": 33
         }
       }
     },
@@ -1734,17 +2408,121 @@
         "postfix": false,
         "binop": null
       },
-      "value": "PreValueApplicator",
-      "start": 1682,
-      "end": 1700,
+      "value": "options",
+      "start": 1775,
+      "end": 1782,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 94
+          "line": 42,
+          "column": 34
         },
         "end": {
-          "line": 41,
-          "column": 112
+          "line": 42,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1782,
+      "end": 1783,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 41
+        },
+        "end": {
+          "line": 42,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1784,
+      "end": 1785,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 43
+        },
+        "end": {
+          "line": 42,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 1791,
+      "end": 1797,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 4
+        },
+        "end": {
+          "line": 43,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "decorator",
+      "start": 1798,
+      "end": 1807,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 11
+        },
+        "end": {
+          "line": 43,
+          "column": 20
         }
       }
     },
@@ -1760,16 +2538,94 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1700,
-      "end": 1701,
+      "start": 1807,
+      "end": 1808,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 112
+          "line": 43,
+          "column": 20
         },
         "end": {
-          "line": 41,
-          "column": 113
+          "line": 43,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "wait",
+      "start": 1808,
+      "end": 1812,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 21
+        },
+        "end": {
+          "line": 43,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1812,
+      "end": 1813,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 25
+        },
+        "end": {
+          "line": 43,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "options",
+      "start": 1814,
+      "end": 1821,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 27
+        },
+        "end": {
+          "line": 43,
+          "column": 34
         }
       }
     },
@@ -1785,66 +2641,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1701,
-      "end": 1702,
+      "start": 1821,
+      "end": 1822,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 113
+          "line": 43,
+          "column": 34
         },
         "end": {
-          "line": 41,
-          "column": 114
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1702,
-      "end": 1703,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 114
-        },
-        "end": {
-          "line": 41,
-          "column": 115
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1703,
-      "end": 1704,
-      "loc": {
-        "start": {
-          "line": 41,
-          "column": 115
-        },
-        "end": {
-          "line": 41,
-          "column": 116
+          "line": 43,
+          "column": 35
         }
       }
     },
@@ -1861,16 +2667,41 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1704,
-      "end": 1705,
+      "start": 1822,
+      "end": 1823,
       "loc": {
         "start": {
-          "line": 41,
-          "column": 116
+          "line": 43,
+          "column": 35
         },
         "end": {
-          "line": 41,
-          "column": 117
+          "line": 43,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1825,
+      "end": 1826,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 0
+        },
+        "end": {
+          "line": 44,
+          "column": 1
         }
       }
     },
@@ -1889,15 +2720,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1706,
-      "end": 1712,
+      "start": 1828,
+      "end": 1834,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 0
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 6
         }
       }
@@ -1914,15 +2745,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1713,
-      "end": 1714,
+      "start": 1835,
+      "end": 1836,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 7
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 8
         }
       }
@@ -1940,15 +2771,15 @@
         "binop": null
       },
       "value": "DebounceAll",
-      "start": 1715,
-      "end": 1726,
+      "start": 1837,
+      "end": 1848,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 9
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 20
         }
       }
@@ -1966,15 +2797,15 @@
         "binop": null
       },
       "value": "as",
-      "start": 1727,
-      "end": 1729,
+      "start": 1849,
+      "end": 1851,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 21
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 23
         }
       }
@@ -1992,15 +2823,15 @@
         "binop": null
       },
       "value": "debounceAll",
-      "start": 1730,
-      "end": 1741,
+      "start": 1852,
+      "end": 1863,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 24
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 35
         }
       }
@@ -2017,15 +2848,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1742,
-      "end": 1743,
+      "start": 1864,
+      "end": 1865,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 36
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 37
         }
       }
@@ -2043,15 +2874,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1743,
-      "end": 1744,
+      "start": 1865,
+      "end": 1866,
       "loc": {
         "start": {
-          "line": 42,
+          "line": 45,
           "column": 37
         },
         "end": {
-          "line": 42,
+          "line": 45,
           "column": 38
         }
       }
@@ -2071,15 +2902,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1745,
-      "end": 1751,
+      "start": 1868,
+      "end": 1874,
       "loc": {
         "start": {
-          "line": 43,
+          "line": 46,
           "column": 0
         },
         "end": {
-          "line": 43,
+          "line": 46,
           "column": 6
         }
       }
@@ -2099,15 +2930,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 1752,
-      "end": 1759,
+      "start": 1875,
+      "end": 1882,
       "loc": {
         "start": {
-          "line": 43,
+          "line": 46,
           "column": 7
         },
         "end": {
-          "line": 43,
+          "line": 46,
           "column": 14
         }
       }
@@ -2124,17 +2955,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "DebounceAll",
-      "start": 1760,
-      "end": 1771,
+      "value": "decorator",
+      "start": 1883,
+      "end": 1892,
       "loc": {
         "start": {
-          "line": 43,
+          "line": 46,
           "column": 15
         },
         "end": {
-          "line": 43,
-          "column": 26
+          "line": 46,
+          "column": 24
         }
       }
     },
@@ -2151,16 +2982,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1771,
-      "end": 1772,
+      "start": 1892,
+      "end": 1893,
       "loc": {
         "start": {
-          "line": 43,
-          "column": 26
+          "line": 46,
+          "column": 24
         },
         "end": {
-          "line": 43,
-          "column": 27
+          "line": 46,
+          "column": 25
         }
       }
     },
@@ -2177,15 +3008,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1773,
-      "end": 1773,
+      "start": 1895,
+      "end": 1895,
       "loc": {
         "start": {
-          "line": 44,
+          "line": 47,
           "column": 0
         },
         "end": {
-          "line": 44,
+          "line": 47,
           "column": 0
         }
       }

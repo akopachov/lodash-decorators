@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1224,
+  "end": 1283,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1224,
+    "end": 1283,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 31,
+        "end": 34,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 31
+            "column": 34
           }
         },
         "specifiers": [
@@ -96,7 +96,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 22,
-          "end": 30,
+          "end": 33,
           "loc": {
             "start": {
               "line": 1,
@@ -104,20 +104,20 @@
             },
             "end": {
               "line": 1,
-              "column": 30
+              "column": 33
             }
           },
           "extra": {
-            "rawValue": "lodash",
-            "raw": "'lodash'"
+            "rawValue": "lodash-es",
+            "raw": "'lodash-es'"
           },
-          "value": "lodash"
+          "value": "lodash-es"
         }
       },
       {
         "type": "ImportDeclaration",
-        "start": 32,
-        "end": 94,
+        "start": 36,
+        "end": 98,
         "loc": {
           "start": {
             "line": 2,
@@ -131,8 +131,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 41,
-            "end": 56,
+            "start": 45,
+            "end": 60,
             "loc": {
               "start": {
                 "line": 2,
@@ -145,8 +145,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 41,
-              "end": 56,
+              "start": 45,
+              "end": 60,
               "loc": {
                 "start": {
                   "line": 2,
@@ -162,8 +162,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 41,
-              "end": 56,
+              "start": 45,
+              "end": 60,
               "loc": {
                 "start": {
                   "line": 2,
@@ -180,8 +180,8 @@
           },
           {
             "type": "ImportSpecifier",
-            "start": 58,
-            "end": 74,
+            "start": 62,
+            "end": 78,
             "loc": {
               "start": {
                 "line": 2,
@@ -194,8 +194,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 58,
-              "end": 74,
+              "start": 62,
+              "end": 78,
               "loc": {
                 "start": {
                   "line": 2,
@@ -211,8 +211,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 58,
-              "end": 74,
+              "start": 62,
+              "end": 78,
               "loc": {
                 "start": {
                   "line": 2,
@@ -230,8 +230,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 82,
-          "end": 93,
+          "start": 86,
+          "end": 97,
           "loc": {
             "start": {
               "line": 2,
@@ -251,8 +251,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 95,
-        "end": 146,
+        "start": 100,
+        "end": 151,
         "loc": {
           "start": {
             "line": 3,
@@ -266,8 +266,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 104,
-            "end": 122,
+            "start": 109,
+            "end": 127,
             "loc": {
               "start": {
                 "line": 3,
@@ -280,8 +280,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 104,
-              "end": 122,
+              "start": 109,
+              "end": 127,
               "loc": {
                 "start": {
                   "line": 3,
@@ -297,8 +297,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 104,
-              "end": 122,
+              "start": 109,
+              "end": 127,
               "loc": {
                 "start": {
                   "line": 3,
@@ -316,8 +316,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 130,
-          "end": 145,
+          "start": 135,
+          "end": 150,
           "loc": {
             "start": {
               "line": 3,
@@ -337,9 +337,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\n * The arity of func may be specified if func.length is not sufficient.\n *\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\n *\n * Note: This method doesn't set the \"length\" property of curried functions.\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\n * @param {number} [arity] The arity of func.\n * @example\n *\n * class MyClass {\n *   @CurryAll()\n *   add(a, b) {\n *     return (a + b);\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * const add5 = myClass.add(5);\n *\n * add5AndMultiply(10); // => 15\n ",
-            "start": 147,
-            "end": 1053,
+            "value": "*\r\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\r\n * The arity of func may be specified if func.length is not sufficient.\r\n *\r\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\r\n *\r\n * Note: This method doesn't set the \"length\" property of curried functions.\r\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\r\n * @param {number} [arity] The arity of func.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @CurryAll()\r\n *   add(a, b) {\r\n *     return (a + b);\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * const add5 = myClass.add(5);\r\n *\r\n * add5AndMultiply(10); // => 15\r\n ",
+            "start": 153,
+            "end": 1082,
             "loc": {
               "start": {
                 "line": 4,
@@ -355,8 +355,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 1054,
-        "end": 1165,
+        "start": 1084,
+        "end": 1221,
         "loc": {
           "start": {
             "line": 28,
@@ -364,15 +364,15 @@
           },
           "end": {
             "line": 28,
-            "column": 111
+            "column": 137
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 1061,
-          "end": 1165,
+          "start": 1091,
+          "end": 1221,
           "loc": {
             "start": {
               "line": 28,
@@ -380,14 +380,14 @@
             },
             "end": {
               "line": 28,
-              "column": 111
+              "column": 137
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 1067,
-              "end": 1164,
+              "start": 1097,
+              "end": 1220,
               "loc": {
                 "start": {
                   "line": 28,
@@ -395,13 +395,13 @@
                 },
                 "end": {
                   "line": 28,
-                  "column": 110
+                  "column": 136
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 1067,
-                "end": 1075,
+                "start": 1097,
+                "end": 1105,
                 "loc": {
                   "start": {
                     "line": 28,
@@ -418,8 +418,8 @@
               },
               "init": {
                 "type": "CallExpression",
-                "start": 1078,
-                "end": 1164,
+                "start": 1108,
+                "end": 1220,
                 "loc": {
                   "start": {
                     "line": 28,
@@ -427,13 +427,13 @@
                   },
                   "end": {
                     "line": 28,
-                    "column": 110
+                    "column": 136
                   }
                 },
                 "callee": {
                   "type": "MemberExpression",
-                  "start": 1078,
-                  "end": 1110,
+                  "start": 1108,
+                  "end": 1140,
                   "loc": {
                     "start": {
                       "line": 28,
@@ -446,8 +446,8 @@
                   },
                   "object": {
                     "type": "Identifier",
-                    "start": 1078,
-                    "end": 1094,
+                    "start": 1108,
+                    "end": 1124,
                     "loc": {
                       "start": {
                         "line": 28,
@@ -463,8 +463,8 @@
                   },
                   "property": {
                     "type": "Identifier",
-                    "start": 1095,
-                    "end": 1110,
+                    "start": 1125,
+                    "end": 1140,
                     "loc": {
                       "start": {
                         "line": 28,
@@ -483,8 +483,8 @@
                 "arguments": [
                   {
                     "type": "NewExpression",
-                    "start": 1111,
-                    "end": 1163,
+                    "start": 1141,
+                    "end": 1219,
                     "loc": {
                       "start": {
                         "line": 28,
@@ -492,13 +492,13 @@
                       },
                       "end": {
                         "line": 28,
-                        "column": 109
+                        "column": 135
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 1115,
-                      "end": 1130,
+                      "start": 1145,
+                      "end": 1160,
                       "loc": {
                         "start": {
                           "line": 28,
@@ -515,8 +515,8 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 1131,
-                        "end": 1136,
+                        "start": 1161,
+                        "end": 1166,
                         "loc": {
                           "start": {
                             "line": 28,
@@ -532,8 +532,8 @@
                       },
                       {
                         "type": "NewExpression",
-                        "start": 1138,
-                        "end": 1162,
+                        "start": 1168,
+                        "end": 1192,
                         "loc": {
                           "start": {
                             "line": 28,
@@ -546,8 +546,8 @@
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 1142,
-                          "end": 1160,
+                          "start": 1172,
+                          "end": 1190,
                           "loc": {
                             "start": {
                               "line": 28,
@@ -562,6 +562,74 @@
                           "name": "PreValueApplicator"
                         },
                         "arguments": []
+                      },
+                      {
+                        "type": "ObjectExpression",
+                        "start": 1194,
+                        "end": 1218,
+                        "loc": {
+                          "start": {
+                            "line": 28,
+                            "column": 110
+                          },
+                          "end": {
+                            "line": 28,
+                            "column": 134
+                          }
+                        },
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "start": 1196,
+                            "end": 1216,
+                            "loc": {
+                              "start": {
+                                "line": 28,
+                                "column": 112
+                              },
+                              "end": {
+                                "line": 28,
+                                "column": 132
+                              }
+                            },
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "start": 1196,
+                              "end": 1210,
+                              "loc": {
+                                "start": {
+                                  "line": 28,
+                                  "column": 112
+                                },
+                                "end": {
+                                  "line": 28,
+                                  "column": 126
+                                },
+                                "identifierName": "optionalParams"
+                              },
+                              "name": "optionalParams"
+                            },
+                            "value": {
+                              "type": "BooleanLiteral",
+                              "start": 1212,
+                              "end": 1216,
+                              "loc": {
+                                "start": {
+                                  "line": 28,
+                                  "column": 128
+                                },
+                                "end": {
+                                  "line": 28,
+                                  "column": 132
+                                }
+                              },
+                              "value": true
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -574,9 +642,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\n * The arity of func may be specified if func.length is not sufficient.\n *\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\n *\n * Note: This method doesn't set the \"length\" property of curried functions.\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\n * @param {number} [arity] The arity of func.\n * @example\n *\n * class MyClass {\n *   @CurryAll()\n *   add(a, b) {\n *     return (a + b);\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * const add5 = myClass.add(5);\n *\n * add5AndMultiply(10); // => 15\n ",
-              "start": 147,
-              "end": 1053,
+              "value": "*\r\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\r\n * The arity of func may be specified if func.length is not sufficient.\r\n *\r\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\r\n *\r\n * Note: This method doesn't set the \"length\" property of curried functions.\r\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\r\n * @param {number} [arity] The arity of func.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @CurryAll()\r\n *   add(a, b) {\r\n *     return (a + b);\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * const add5 = myClass.add(5);\r\n *\r\n * add5AndMultiply(10); // => 15\r\n ",
+              "start": 153,
+              "end": 1082,
               "loc": {
                 "start": {
                   "line": 4,
@@ -594,9 +662,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\n * The arity of func may be specified if func.length is not sufficient.\n *\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\n *\n * Note: This method doesn't set the \"length\" property of curried functions.\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\n * @param {number} [arity] The arity of func.\n * @example\n *\n * class MyClass {\n *   @CurryAll()\n *   add(a, b) {\n *     return (a + b);\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * const add5 = myClass.add(5);\n *\n * add5AndMultiply(10); // => 15\n ",
-            "start": 147,
-            "end": 1053,
+            "value": "*\r\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\r\n * The arity of func may be specified if func.length is not sufficient.\r\n *\r\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\r\n *\r\n * Note: This method doesn't set the \"length\" property of curried functions.\r\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\r\n * @param {number} [arity] The arity of func.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @CurryAll()\r\n *   add(a, b) {\r\n *     return (a + b);\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * const add5 = myClass.add(5);\r\n *\r\n * add5AndMultiply(10); // => 15\r\n ",
+            "start": 153,
+            "end": 1082,
             "loc": {
               "start": {
                 "line": 4,
@@ -612,8 +680,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 1166,
-        "end": 1198,
+        "start": 1223,
+        "end": 1255,
         "loc": {
           "start": {
             "line": 29,
@@ -628,8 +696,8 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 1175,
-            "end": 1195,
+            "start": 1232,
+            "end": 1252,
             "loc": {
               "start": {
                 "line": 29,
@@ -642,8 +710,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 1175,
-              "end": 1183,
+              "start": 1232,
+              "end": 1240,
               "loc": {
                 "start": {
                   "line": 29,
@@ -659,8 +727,8 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 1187,
-              "end": 1195,
+              "start": 1244,
+              "end": 1252,
               "loc": {
                 "start": {
                   "line": 29,
@@ -680,8 +748,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 1199,
-        "end": 1223,
+        "start": 1257,
+        "end": 1281,
         "loc": {
           "start": {
             "line": 30,
@@ -694,8 +762,8 @@
         },
         "declaration": {
           "type": "Identifier",
-          "start": 1214,
-          "end": 1222,
+          "start": 1272,
+          "end": 1280,
           "loc": {
             "start": {
               "line": 30,
@@ -718,9 +786,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\n * The arity of func may be specified if func.length is not sufficient.\n *\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\n *\n * Note: This method doesn't set the \"length\" property of curried functions.\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\n * @param {number} [arity] The arity of func.\n * @example\n *\n * class MyClass {\n *   @CurryAll()\n *   add(a, b) {\n *     return (a + b);\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * const add5 = myClass.add(5);\n *\n * add5AndMultiply(10); // => 15\n ",
-      "start": 147,
-      "end": 1053,
+      "value": "*\r\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\r\n * The arity of func may be specified if func.length is not sufficient.\r\n *\r\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\r\n *\r\n * Note: This method doesn't set the \"length\" property of curried functions.\r\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\r\n * @param {number} [arity] The arity of func.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @CurryAll()\r\n *   add(a, b) {\r\n *     return (a + b);\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * const add5 = myClass.add(5);\r\n *\r\n * add5AndMultiply(10); // => 15\r\n ",
+      "start": 153,
+      "end": 1082,
       "loc": {
         "start": {
           "line": 4,
@@ -739,7 +807,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -877,9 +945,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "lodash",
+      "value": "lodash-es",
       "start": 22,
-      "end": 30,
+      "end": 33,
       "loc": {
         "start": {
           "line": 1,
@@ -887,7 +955,7 @@
         },
         "end": {
           "line": 1,
-          "column": 30
+          "column": 33
         }
       }
     },
@@ -904,16 +972,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 30,
-      "end": 31,
+      "start": 33,
+      "end": 34,
       "loc": {
         "start": {
           "line": 1,
-          "column": 30
+          "column": 33
         },
         "end": {
           "line": 1,
-          "column": 31
+          "column": 34
         }
       }
     },
@@ -922,7 +990,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -932,8 +1000,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 32,
-      "end": 38,
+      "start": 36,
+      "end": 42,
       "loc": {
         "start": {
           "line": 2,
@@ -957,8 +1025,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 39,
-      "end": 40,
+      "start": 43,
+      "end": 44,
       "loc": {
         "start": {
           "line": 2,
@@ -983,8 +1051,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 41,
-      "end": 56,
+      "start": 45,
+      "end": 60,
       "loc": {
         "start": {
           "line": 2,
@@ -1009,8 +1077,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 56,
-      "end": 57,
+      "start": 60,
+      "end": 61,
       "loc": {
         "start": {
           "line": 2,
@@ -1035,8 +1103,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 58,
-      "end": 74,
+      "start": 62,
+      "end": 78,
       "loc": {
         "start": {
           "line": 2,
@@ -1060,8 +1128,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 75,
-      "end": 76,
+      "start": 79,
+      "end": 80,
       "loc": {
         "start": {
           "line": 2,
@@ -1086,8 +1154,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 77,
-      "end": 81,
+      "start": 81,
+      "end": 85,
       "loc": {
         "start": {
           "line": 2,
@@ -1113,8 +1181,8 @@
         "updateContext": null
       },
       "value": "./factory",
-      "start": 82,
-      "end": 93,
+      "start": 86,
+      "end": 97,
       "loc": {
         "start": {
           "line": 2,
@@ -1139,8 +1207,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 93,
-      "end": 94,
+      "start": 97,
+      "end": 98,
       "loc": {
         "start": {
           "line": 2,
@@ -1157,7 +1225,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1167,8 +1235,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 95,
-      "end": 101,
+      "start": 100,
+      "end": 106,
       "loc": {
         "start": {
           "line": 3,
@@ -1192,8 +1260,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 102,
-      "end": 103,
+      "start": 107,
+      "end": 108,
       "loc": {
         "start": {
           "line": 3,
@@ -1218,8 +1286,8 @@
         "binop": null
       },
       "value": "PreValueApplicator",
-      "start": 104,
-      "end": 122,
+      "start": 109,
+      "end": 127,
       "loc": {
         "start": {
           "line": 3,
@@ -1243,8 +1311,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 123,
-      "end": 124,
+      "start": 128,
+      "end": 129,
       "loc": {
         "start": {
           "line": 3,
@@ -1269,8 +1337,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 125,
-      "end": 129,
+      "start": 130,
+      "end": 134,
       "loc": {
         "start": {
           "line": 3,
@@ -1296,8 +1364,8 @@
         "updateContext": null
       },
       "value": "./applicators",
-      "start": 130,
-      "end": 145,
+      "start": 135,
+      "end": 150,
       "loc": {
         "start": {
           "line": 3,
@@ -1322,8 +1390,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 145,
-      "end": 146,
+      "start": 150,
+      "end": 151,
       "loc": {
         "start": {
           "line": 3,
@@ -1337,9 +1405,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\n * The arity of func may be specified if func.length is not sufficient.\n *\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\n *\n * Note: This method doesn't set the \"length\" property of curried functions.\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\n * @param {number} [arity] The arity of func.\n * @example\n *\n * class MyClass {\n *   @CurryAll()\n *   add(a, b) {\n *     return (a + b);\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * const add5 = myClass.add(5);\n *\n * add5AndMultiply(10); // => 15\n ",
-      "start": 147,
-      "end": 1053,
+      "value": "*\r\n * Creates a function that accepts arguments of func and either invokes func returning its result, if at least arity number of arguments have been provided, or returns a function that accepts the remaining func arguments, and so on.\r\n * The arity of func may be specified if func.length is not sufficient.\r\n *\r\n * The _.curry.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for provided arguments.\r\n *\r\n * Note: This method doesn't set the \"length\" property of curried functions.\r\n * Note: The original function invoked will not be called in the context of the instance. Use `Curry` to for using it bound.\r\n * @param {number} [arity] The arity of func.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @CurryAll()\r\n *   add(a, b) {\r\n *     return (a + b);\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * const add5 = myClass.add(5);\r\n *\r\n * add5AndMultiply(10); // => 15\r\n ",
+      "start": 153,
+      "end": 1082,
       "loc": {
         "start": {
           "line": 4,
@@ -1366,8 +1434,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1054,
-      "end": 1060,
+      "start": 1084,
+      "end": 1090,
       "loc": {
         "start": {
           "line": 28,
@@ -1394,8 +1462,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 1061,
-      "end": 1066,
+      "start": 1091,
+      "end": 1096,
       "loc": {
         "start": {
           "line": 28,
@@ -1420,8 +1488,8 @@
         "binop": null
       },
       "value": "CurryAll",
-      "start": 1067,
-      "end": 1075,
+      "start": 1097,
+      "end": 1105,
       "loc": {
         "start": {
           "line": 28,
@@ -1447,8 +1515,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 1076,
-      "end": 1077,
+      "start": 1106,
+      "end": 1107,
       "loc": {
         "start": {
           "line": 28,
@@ -1473,8 +1541,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 1078,
-      "end": 1094,
+      "start": 1108,
+      "end": 1124,
       "loc": {
         "start": {
           "line": 28,
@@ -1499,8 +1567,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1094,
-      "end": 1095,
+      "start": 1124,
+      "end": 1125,
       "loc": {
         "start": {
           "line": 28,
@@ -1525,8 +1593,8 @@
         "binop": null
       },
       "value": "createDecorator",
-      "start": 1095,
-      "end": 1110,
+      "start": 1125,
+      "end": 1140,
       "loc": {
         "start": {
           "line": 28,
@@ -1550,8 +1618,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1110,
-      "end": 1111,
+      "start": 1140,
+      "end": 1141,
       "loc": {
         "start": {
           "line": 28,
@@ -1578,8 +1646,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 1111,
-      "end": 1114,
+      "start": 1141,
+      "end": 1144,
       "loc": {
         "start": {
           "line": 28,
@@ -1604,8 +1672,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 1115,
-      "end": 1130,
+      "start": 1145,
+      "end": 1160,
       "loc": {
         "start": {
           "line": 28,
@@ -1629,8 +1697,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1130,
-      "end": 1131,
+      "start": 1160,
+      "end": 1161,
       "loc": {
         "start": {
           "line": 28,
@@ -1655,8 +1723,8 @@
         "binop": null
       },
       "value": "curry",
-      "start": 1131,
-      "end": 1136,
+      "start": 1161,
+      "end": 1166,
       "loc": {
         "start": {
           "line": 28,
@@ -1681,8 +1749,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1136,
-      "end": 1137,
+      "start": 1166,
+      "end": 1167,
       "loc": {
         "start": {
           "line": 28,
@@ -1709,8 +1777,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 1138,
-      "end": 1141,
+      "start": 1168,
+      "end": 1171,
       "loc": {
         "start": {
           "line": 28,
@@ -1735,8 +1803,8 @@
         "binop": null
       },
       "value": "PreValueApplicator",
-      "start": 1142,
-      "end": 1160,
+      "start": 1172,
+      "end": 1190,
       "loc": {
         "start": {
           "line": 28,
@@ -1760,8 +1828,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1160,
-      "end": 1161,
+      "start": 1190,
+      "end": 1191,
       "loc": {
         "start": {
           "line": 28,
@@ -1785,8 +1853,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1161,
-      "end": 1162,
+      "start": 1191,
+      "end": 1192,
       "loc": {
         "start": {
           "line": 28,
@@ -1800,7 +1868,138 @@
     },
     {
       "type": {
-        "label": ")",
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1192,
+      "end": 1193,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 108
+        },
+        "end": {
+          "line": 28,
+          "column": 109
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1194,
+      "end": 1195,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 110
+        },
+        "end": {
+          "line": 28,
+          "column": 111
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "optionalParams",
+      "start": 1196,
+      "end": 1210,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 112
+        },
+        "end": {
+          "line": 28,
+          "column": 126
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1210,
+      "end": 1211,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 126
+        },
+        "end": {
+          "line": 28,
+          "column": 127
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "true",
+        "keyword": "true",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "true",
+      "start": 1212,
+      "end": 1216,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 128
+        },
+        "end": {
+          "line": 28,
+          "column": 132
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
         "beforeExpr": false,
         "startsExpr": false,
         "rightAssociative": false,
@@ -1810,16 +2009,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1162,
-      "end": 1163,
+      "start": 1217,
+      "end": 1218,
       "loc": {
         "start": {
           "line": 28,
-          "column": 108
+          "column": 133
         },
         "end": {
           "line": 28,
-          "column": 109
+          "column": 134
         }
       }
     },
@@ -1835,16 +2034,41 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1163,
-      "end": 1164,
+      "start": 1218,
+      "end": 1219,
       "loc": {
         "start": {
           "line": 28,
-          "column": 109
+          "column": 134
         },
         "end": {
           "line": 28,
-          "column": 110
+          "column": 135
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1219,
+      "end": 1220,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 135
+        },
+        "end": {
+          "line": 28,
+          "column": 136
         }
       }
     },
@@ -1861,16 +2085,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1164,
-      "end": 1165,
+      "start": 1220,
+      "end": 1221,
       "loc": {
         "start": {
           "line": 28,
-          "column": 110
+          "column": 136
         },
         "end": {
           "line": 28,
-          "column": 111
+          "column": 137
         }
       }
     },
@@ -1889,8 +2113,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1166,
-      "end": 1172,
+      "start": 1223,
+      "end": 1229,
       "loc": {
         "start": {
           "line": 29,
@@ -1914,8 +2138,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1173,
-      "end": 1174,
+      "start": 1230,
+      "end": 1231,
       "loc": {
         "start": {
           "line": 29,
@@ -1940,8 +2164,8 @@
         "binop": null
       },
       "value": "CurryAll",
-      "start": 1175,
-      "end": 1183,
+      "start": 1232,
+      "end": 1240,
       "loc": {
         "start": {
           "line": 29,
@@ -1966,8 +2190,8 @@
         "binop": null
       },
       "value": "as",
-      "start": 1184,
-      "end": 1186,
+      "start": 1241,
+      "end": 1243,
       "loc": {
         "start": {
           "line": 29,
@@ -1992,8 +2216,8 @@
         "binop": null
       },
       "value": "curryAll",
-      "start": 1187,
-      "end": 1195,
+      "start": 1244,
+      "end": 1252,
       "loc": {
         "start": {
           "line": 29,
@@ -2017,8 +2241,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1196,
-      "end": 1197,
+      "start": 1253,
+      "end": 1254,
       "loc": {
         "start": {
           "line": 29,
@@ -2043,8 +2267,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1197,
-      "end": 1198,
+      "start": 1254,
+      "end": 1255,
       "loc": {
         "start": {
           "line": 29,
@@ -2071,8 +2295,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 1199,
-      "end": 1205,
+      "start": 1257,
+      "end": 1263,
       "loc": {
         "start": {
           "line": 30,
@@ -2099,8 +2323,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 1206,
-      "end": 1213,
+      "start": 1264,
+      "end": 1271,
       "loc": {
         "start": {
           "line": 30,
@@ -2125,8 +2349,8 @@
         "binop": null
       },
       "value": "CurryAll",
-      "start": 1214,
-      "end": 1222,
+      "start": 1272,
+      "end": 1280,
       "loc": {
         "start": {
           "line": 30,
@@ -2151,8 +2375,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1222,
-      "end": 1223,
+      "start": 1280,
+      "end": 1281,
       "loc": {
         "start": {
           "line": 30,
@@ -2177,8 +2401,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1224,
-      "end": 1224,
+      "start": 1283,
+      "end": 1283,
       "loc": {
         "start": {
           "line": 31,

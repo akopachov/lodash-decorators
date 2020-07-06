@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "module": "es2015",
     "alwaysStrict": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "sourceMap": true,
     "inlineSources": true,
-    "target": "es5",
+    "target": "es2015",
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,

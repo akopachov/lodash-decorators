@@ -1,4 +1,4 @@
-import isFunction = require('lodash/isFunction');
+import { isFunction } from 'lodash-es';
 
 import { InstanceChainMap } from './factory';
 import { Bind } from './bind';

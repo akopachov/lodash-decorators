@@ -1,0 +1,63 @@
+[
+  {
+    "name": "resolveFunction",
+    "filePath": "buildDocs/utils/resolveFunction.js",
+    "lines": [
+      {
+        "lineNumber": 3,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 4,
+        "line": "  * Resolves a function on the current target object. It first will\r"
+      },
+      {
+        "lineNumber": 5,
+        "line": "  * try and resolve on the context object, then the target object,\r"
+      },
+      {
+        "lineNumber": 6,
+        "line": "  * then an error will be thrown if the method can not be resolved.\r"
+      },
+      {
+        "lineNumber": 7,
+        "line": "  * @private\r"
+      },
+      {
+        "lineNumber": 8,
+        "line": "  * @param {Function|string} method The method or method name.\r"
+      },
+      {
+        "lineNumber": 9,
+        "line": "  * @param {Object} [context] The context object to resolve from.\r"
+      },
+      {
+        "lineNumber": 10,
+        "line": "  * @param {Object} [target] The target object to resolve from.\r"
+      },
+      {
+        "lineNumber": 11,
+        "line": "  * @returns {Function} The resolved function.\r"
+      },
+      {
+        "lineNumber": 12,
+        "line": "  */\r"
+      },
+      {
+        "lineNumber": 13,
+        "line": "export function resolveFunction(method, context, target, throwNotFound = true) {\r"
+      }
+    ],
+    "codeParams": [
+      "method",
+      "context",
+      "target",
+      "throwNotFound"
+    ],
+    "docParams": [
+      "method",
+      "context",
+      "target"
+    ]
+  }
+]

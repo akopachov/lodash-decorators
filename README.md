@@ -15,19 +15,19 @@ Decorators using lodash functions. View the [API docs](https://steelsojka.github
   - [Decorators](#decorators)
     - [Example](#example)
   - [Optional Params and Casing](#optional-params-and-casing)
-    - [Example](#example)
-  - [Partials](#partials)
     - [Example](#example-1)
-  - [Composition](#composition)
+  - [Partials](#partials)
     - [Example](#example-2)
+  - [Composition](#composition)
+    - [Example](#example-3)
   - [Instance Decorators](#instance-decorators)
   - [Mixin](#mixin)
-    - [Example](#example-3)
-  - [Attempt](#attempt)
     - [Example](#example-4)
-  - [Bind](#bind)
+  - [Attempt](#attempt)
     - [Example](#example-5)
+  - [Bind](#bind)
     - [Example](#example-6)
+    - [Example](#example-7)
   - [v4 Breaking Changes](#v4-breaking-changes)
     - [Not all decorators can be applied to or forced on getters/setters.](#not-all-decorators-can-be-applied-to-or-forced-on-getterssetters)
     - [No longer force instance decorator onto prototype](#no-longer-force-instance-decorator-onto-prototype)
@@ -41,7 +41,7 @@ Decorators using lodash functions. View the [API docs](https://steelsojka.github
 
 ## Install
 
-`npm install --save lodash lodash-decorators`
+`npm install --save lodash-es lodash-decorators-es`
 
 ### Polyfills
 
@@ -53,15 +53,15 @@ For more in depth documentation please visit [Lodash](http://lodash.com/docs)
 
 Decorators are exported as both start case and lower case.
 
-`import { Debounce } from 'lodash-decorators';`
+`import { Debounce } from 'lodash-decorators-esm';`
 
 is the same as
 
-`import { debounce } from 'lodash-decorators';`
+`import { debounce } from 'lodash-decorators-esm';`
 
 They can also be imported directly.
 
-`import Debounce from 'lodash-decorators/debounce';`
+`import Debounce from 'lodash-decorators-esm/debounce';`
 
 ### Decorators
 
@@ -109,7 +109,7 @@ These decorators are included in the package. These are also exported as lowerca
 #### Example
 
 ```javascript
-import { Debounce, Memoize } from 'lodash-decorators';
+import { Debounce, Memoize } from 'lodash-decorators-es';
 
 class Person {
   constructor(firstName, lastName) {
@@ -167,7 +167,7 @@ the current object.
 #### Example
 
 ```javascript
-import { Partial, Wrap } from 'lodash-decorators'
+import { Partial, Wrap } from 'lodash-decorators-esm'
 
 class Person {
   constructor(firstName, lastName) {
@@ -207,8 +207,8 @@ are resolved.
 #### Example
 
 ```javascript
-import { Flow } from 'lodash-decorators'
-import { kebabCase } from 'lodash';
+import { Flow } from 'lodash-decorators-esm'
+import { kebabCase } from 'lodash-es';
 
 class Person {
   @Flow('getName', kebabCase)
@@ -260,7 +260,7 @@ You can mixin methods into a class by using the `Mixin` decorator.
 #### Example
 
 ```javascript
-import { Mixin } from 'lodash-decorators';
+import { Mixin } from 'lodash-decorators-esm';
 
 const MyOtherApi = {
   someCoolMethod() {
@@ -281,7 +281,7 @@ You can wrap a method in a lodash attempt method.
 #### Example
 
 ```javascript
-import { Attempt } from 'lodash-decorators';
+import { Attempt } from 'lodash-decorators-esm';
 
 class Person {
   @Attempt()
@@ -314,7 +314,7 @@ the current instance object.
 #### Example
 
 ```javascript
-import { Bind } from 'lodash-decorators'
+import { Bind } from 
 
 class Person {
   constructor(firstName, lastName) {
@@ -345,7 +345,7 @@ You can also bind entire classes with `bindAll` or `bind`.
 #### Example
 
 ```javascript
-import { BindAll } from 'lodash-decorators'
+import { BindAll } from 'lodash-decorators-esm'
 
 @BindAll()
 class Person {

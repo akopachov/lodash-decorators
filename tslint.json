@@ -19,6 +19,11 @@
     "interface-name": false,
     "no-unused-expression": false,
     "only-arrow-functions": false,
-    "no-empty": false
+    "no-empty": false,
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "no-shadowed-variable": false,
+    "interface-over-type-literal": false,
+    "jsdoc-format": false
   }
 }

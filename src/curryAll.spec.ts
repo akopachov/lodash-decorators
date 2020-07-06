@@ -52,7 +52,7 @@ describe('curryAll', () => {
     class MyClass {
       @CurryAll()
       add(a: any, b?: any): any {
-        expect(this).to.equal(global);
+        expect(this).to.undefined;
       }
     }
 

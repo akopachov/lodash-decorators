@@ -1,4 +1,4 @@
-import isFunction = require('lodash/isFunction');
+import { isFunction } from 'lodash-es';
 
 import {
   InstanceChainMap,
@@ -130,7 +130,7 @@ export class InternalDecoratorFactory {
               value: newFn
             });
           }
-        }
+        };
 
         if (isMethod || isProperty) {
           delete descriptor.value;

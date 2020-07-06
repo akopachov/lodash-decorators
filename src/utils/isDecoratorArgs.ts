@@ -1,6 +1,6 @@
-import isObject = require('lodash/isObject');
-import isFunction = require('lodash/isFunction');
-import isString = require('lodash/isString');
+import { isObject } from 'lodash-es';
+import { isFunction } from 'lodash-es';
+import { isString } from 'lodash-es';
 
 export function isMethodOrPropertyDecoratorArgs(...args: any[]): boolean {
   return args.length >= 2

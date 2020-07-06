@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1015,
+  "end": 1082,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 32,
+      "line": 34,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1015,
+    "end": 1082,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 32,
+        "line": 34,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 30,
+        "end": 33,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 30
+            "column": 33
           }
         },
         "specifiers": [
@@ -96,7 +96,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 21,
-          "end": 29,
+          "end": 32,
           "loc": {
             "start": {
               "line": 1,
@@ -104,20 +104,20 @@
             },
             "end": {
               "line": 1,
-              "column": 29
+              "column": 32
             }
           },
           "extra": {
-            "rawValue": "lodash",
-            "raw": "'lodash'"
+            "rawValue": "lodash-es",
+            "raw": "'lodash-es'"
           },
-          "value": "lodash"
+          "value": "lodash-es"
         }
       },
       {
         "type": "ImportDeclaration",
-        "start": 31,
-        "end": 93,
+        "start": 35,
+        "end": 97,
         "loc": {
           "start": {
             "line": 2,
@@ -131,8 +131,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 40,
-            "end": 55,
+            "start": 44,
+            "end": 59,
             "loc": {
               "start": {
                 "line": 2,
@@ -145,8 +145,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 40,
-              "end": 55,
+              "start": 44,
+              "end": 59,
               "loc": {
                 "start": {
                   "line": 2,
@@ -162,8 +162,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 40,
-              "end": 55,
+              "start": 44,
+              "end": 59,
               "loc": {
                 "start": {
                   "line": 2,
@@ -180,8 +180,8 @@
           },
           {
             "type": "ImportSpecifier",
-            "start": 57,
-            "end": 73,
+            "start": 61,
+            "end": 77,
             "loc": {
               "start": {
                 "line": 2,
@@ -194,8 +194,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 57,
-              "end": 73,
+              "start": 61,
+              "end": 77,
               "loc": {
                 "start": {
                   "line": 2,
@@ -211,8 +211,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 57,
-              "end": 73,
+              "start": 61,
+              "end": 77,
               "loc": {
                 "start": {
                   "line": 2,
@@ -230,8 +230,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 81,
-          "end": 92,
+          "start": 85,
+          "end": 96,
           "loc": {
             "start": {
               "line": 2,
@@ -251,8 +251,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 94,
-        "end": 141,
+        "start": 99,
+        "end": 146,
         "loc": {
           "start": {
             "line": 3,
@@ -266,8 +266,8 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 103,
-            "end": 117,
+            "start": 108,
+            "end": 122,
             "loc": {
               "start": {
                 "line": 3,
@@ -280,8 +280,8 @@
             },
             "imported": {
               "type": "Identifier",
-              "start": 103,
-              "end": 117,
+              "start": 108,
+              "end": 122,
               "loc": {
                 "start": {
                   "line": 3,
@@ -297,8 +297,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 103,
-              "end": 117,
+              "start": 108,
+              "end": 122,
               "loc": {
                 "start": {
                   "line": 3,
@@ -316,8 +316,8 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 125,
-          "end": 140,
+          "start": 130,
+          "end": 145,
           "loc": {
             "start": {
               "line": 3,
@@ -337,9 +337,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\n *\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\n *\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\n * @param {...*} [partials] The argument to be partially applied.\n * @example\n *\n * class MyClass {\n *   @Bind()\n *   bound() {\n *     return this;\n *   }\n *\n *   unbound() {\n *     return this;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.bound.call(null); // => myClass {}\n * myClass.unbound.call(null); // => null\n ",
-            "start": 142,
-            "end": 857,
+            "value": "*\r\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\r\n *\r\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\r\n *\r\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\r\n * @param {...*} [partials] The argument to be partially applied.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Bind()\r\n *   bound() {\r\n *     return this;\r\n *   }\r\n *\r\n *   unbound() {\r\n *     return this;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.bound.call(null); // => myClass {}\r\n * myClass.unbound.call(null); // => null\r\n ",
+            "start": 148,
+            "end": 887,
             "loc": {
               "start": {
                 "line": 4,
@@ -355,53 +355,53 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 858,
-        "end": 968,
+        "start": 889,
+        "end": 1031,
         "loc": {
           "start": {
             "line": 29,
             "column": 0
           },
           "end": {
-            "line": 29,
-            "column": 110
+            "line": 31,
+            "column": 4
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 865,
-          "end": 968,
+          "start": 896,
+          "end": 1031,
           "loc": {
             "start": {
               "line": 29,
               "column": 7
             },
             "end": {
-              "line": 29,
-              "column": 110
+              "line": 31,
+              "column": 4
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 871,
-              "end": 967,
+              "start": 902,
+              "end": 1030,
               "loc": {
                 "start": {
                   "line": 29,
                   "column": 13
                 },
                 "end": {
-                  "line": 29,
-                  "column": 109
+                  "line": 31,
+                  "column": 3
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 871,
-                "end": 875,
+                "start": 902,
+                "end": 906,
                 "loc": {
                   "start": {
                     "line": 29,
@@ -418,22 +418,22 @@
               },
               "init": {
                 "type": "CallExpression",
-                "start": 878,
-                "end": 967,
+                "start": 909,
+                "end": 1030,
                 "loc": {
                   "start": {
                     "line": 29,
                     "column": 20
                   },
                   "end": {
-                    "line": 29,
-                    "column": 109
+                    "line": 31,
+                    "column": 3
                   }
                 },
                 "callee": {
                   "type": "MemberExpression",
-                  "start": 878,
-                  "end": 918,
+                  "start": 909,
+                  "end": 949,
                   "loc": {
                     "start": {
                       "line": 29,
@@ -446,8 +446,8 @@
                   },
                   "object": {
                     "type": "Identifier",
-                    "start": 878,
-                    "end": 894,
+                    "start": 909,
+                    "end": 925,
                     "loc": {
                       "start": {
                         "line": 29,
@@ -463,8 +463,8 @@
                   },
                   "property": {
                     "type": "Identifier",
-                    "start": 895,
-                    "end": 918,
+                    "start": 926,
+                    "end": 949,
                     "loc": {
                       "start": {
                         "line": 29,
@@ -483,22 +483,22 @@
                 "arguments": [
                   {
                     "type": "NewExpression",
-                    "start": 919,
-                    "end": 966,
+                    "start": 950,
+                    "end": 1029,
                     "loc": {
                       "start": {
                         "line": 29,
                         "column": 61
                       },
                       "end": {
-                        "line": 29,
-                        "column": 108
+                        "line": 31,
+                        "column": 2
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 923,
-                      "end": 938,
+                      "start": 954,
+                      "end": 969,
                       "loc": {
                         "start": {
                           "line": 29,
@@ -515,8 +515,8 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 939,
-                        "end": 943,
+                        "start": 970,
+                        "end": 974,
                         "loc": {
                           "start": {
                             "line": 29,
@@ -532,8 +532,8 @@
                       },
                       {
                         "type": "NewExpression",
-                        "start": 945,
-                        "end": 965,
+                        "start": 976,
+                        "end": 996,
                         "loc": {
                           "start": {
                             "line": 29,
@@ -546,8 +546,8 @@
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 949,
-                          "end": 963,
+                          "start": 980,
+                          "end": 994,
                           "loc": {
                             "start": {
                               "line": 29,
@@ -562,6 +562,74 @@
                           "name": "BindApplicator"
                         },
                         "arguments": []
+                      },
+                      {
+                        "type": "ObjectExpression",
+                        "start": 998,
+                        "end": 1028,
+                        "loc": {
+                          "start": {
+                            "line": 29,
+                            "column": 109
+                          },
+                          "end": {
+                            "line": 31,
+                            "column": 1
+                          }
+                        },
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "start": 1005,
+                            "end": 1025,
+                            "loc": {
+                              "start": {
+                                "line": 30,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 30,
+                                "column": 24
+                              }
+                            },
+                            "method": false,
+                            "shorthand": false,
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "start": 1005,
+                              "end": 1019,
+                              "loc": {
+                                "start": {
+                                  "line": 30,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 30,
+                                  "column": 18
+                                },
+                                "identifierName": "optionalParams"
+                              },
+                              "name": "optionalParams"
+                            },
+                            "value": {
+                              "type": "BooleanLiteral",
+                              "start": 1021,
+                              "end": 1025,
+                              "loc": {
+                                "start": {
+                                  "line": 30,
+                                  "column": 20
+                                },
+                                "end": {
+                                  "line": 30,
+                                  "column": 24
+                                }
+                              },
+                              "value": true
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -574,9 +642,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\n *\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\n *\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\n * @param {...*} [partials] The argument to be partially applied.\n * @example\n *\n * class MyClass {\n *   @Bind()\n *   bound() {\n *     return this;\n *   }\n *\n *   unbound() {\n *     return this;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.bound.call(null); // => myClass {}\n * myClass.unbound.call(null); // => null\n ",
-              "start": 142,
-              "end": 857,
+              "value": "*\r\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\r\n *\r\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\r\n *\r\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\r\n * @param {...*} [partials] The argument to be partially applied.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Bind()\r\n *   bound() {\r\n *     return this;\r\n *   }\r\n *\r\n *   unbound() {\r\n *     return this;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.bound.call(null); // => myClass {}\r\n * myClass.unbound.call(null); // => null\r\n ",
+              "start": 148,
+              "end": 887,
               "loc": {
                 "start": {
                   "line": 4,
@@ -594,9 +662,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\n *\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\n *\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\n * @param {...*} [partials] The argument to be partially applied.\n * @example\n *\n * class MyClass {\n *   @Bind()\n *   bound() {\n *     return this;\n *   }\n *\n *   unbound() {\n *     return this;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.bound.call(null); // => myClass {}\n * myClass.unbound.call(null); // => null\n ",
-            "start": 142,
-            "end": 857,
+            "value": "*\r\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\r\n *\r\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\r\n *\r\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\r\n * @param {...*} [partials] The argument to be partially applied.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Bind()\r\n *   bound() {\r\n *     return this;\r\n *   }\r\n *\r\n *   unbound() {\r\n *     return this;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.bound.call(null); // => myClass {}\r\n * myClass.unbound.call(null); // => null\r\n ",
+            "start": 148,
+            "end": 887,
             "loc": {
               "start": {
                 "line": 4,
@@ -612,45 +680,45 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 969,
-        "end": 993,
+        "start": 1033,
+        "end": 1058,
         "loc": {
           "start": {
-            "line": 30,
+            "line": 32,
             "column": 0
           },
           "end": {
-            "line": 30,
-            "column": 24
+            "line": 32,
+            "column": 25
           }
         },
         "declaration": null,
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 978,
-            "end": 990,
+            "start": 1042,
+            "end": 1054,
             "loc": {
               "start": {
-                "line": 30,
+                "line": 32,
                 "column": 9
               },
               "end": {
-                "line": 30,
+                "line": 32,
                 "column": 21
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 978,
-              "end": 982,
+              "start": 1042,
+              "end": 1046,
               "loc": {
                 "start": {
-                  "line": 30,
+                  "line": 32,
                   "column": 9
                 },
                 "end": {
-                  "line": 30,
+                  "line": 32,
                   "column": 13
                 },
                 "identifierName": "Bind"
@@ -659,15 +727,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 986,
-              "end": 990,
+              "start": 1050,
+              "end": 1054,
               "loc": {
                 "start": {
-                  "line": 30,
+                  "line": 32,
                   "column": 17
                 },
                 "end": {
-                  "line": 30,
+                  "line": 32,
                   "column": 21
                 },
                 "identifierName": "bind"
@@ -680,29 +748,29 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 994,
-        "end": 1014,
+        "start": 1060,
+        "end": 1080,
         "loc": {
           "start": {
-            "line": 31,
+            "line": 33,
             "column": 0
           },
           "end": {
-            "line": 31,
+            "line": 33,
             "column": 20
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 1009,
-          "end": 1013,
+          "start": 1075,
+          "end": 1079,
           "loc": {
             "start": {
-              "line": 31,
+              "line": 33,
               "column": 15
             },
             "end": {
-              "line": 31,
+              "line": 33,
               "column": 19
             },
             "identifierName": "Bind"
@@ -718,9 +786,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\n *\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\n *\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\n * @param {...*} [partials] The argument to be partially applied.\n * @example\n *\n * class MyClass {\n *   @Bind()\n *   bound() {\n *     return this;\n *   }\n *\n *   unbound() {\n *     return this;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.bound.call(null); // => myClass {}\n * myClass.unbound.call(null); // => null\n ",
-      "start": 142,
-      "end": 857,
+      "value": "*\r\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\r\n *\r\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\r\n *\r\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\r\n * @param {...*} [partials] The argument to be partially applied.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Bind()\r\n *   bound() {\r\n *     return this;\r\n *   }\r\n *\r\n *   unbound() {\r\n *     return this;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.bound.call(null); // => myClass {}\r\n * myClass.unbound.call(null); // => null\r\n ",
+      "start": 148,
+      "end": 887,
       "loc": {
         "start": {
           "line": 4,
@@ -739,7 +807,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -877,9 +945,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "lodash",
+      "value": "lodash-es",
       "start": 21,
-      "end": 29,
+      "end": 32,
       "loc": {
         "start": {
           "line": 1,
@@ -887,7 +955,7 @@
         },
         "end": {
           "line": 1,
-          "column": 29
+          "column": 32
         }
       }
     },
@@ -904,16 +972,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 29,
-      "end": 30,
+      "start": 32,
+      "end": 33,
       "loc": {
         "start": {
           "line": 1,
-          "column": 29
+          "column": 32
         },
         "end": {
           "line": 1,
-          "column": 30
+          "column": 33
         }
       }
     },
@@ -922,7 +990,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -932,8 +1000,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 31,
-      "end": 37,
+      "start": 35,
+      "end": 41,
       "loc": {
         "start": {
           "line": 2,
@@ -957,8 +1025,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 38,
-      "end": 39,
+      "start": 42,
+      "end": 43,
       "loc": {
         "start": {
           "line": 2,
@@ -983,8 +1051,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 40,
-      "end": 55,
+      "start": 44,
+      "end": 59,
       "loc": {
         "start": {
           "line": 2,
@@ -1009,8 +1077,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 55,
-      "end": 56,
+      "start": 59,
+      "end": 60,
       "loc": {
         "start": {
           "line": 2,
@@ -1035,8 +1103,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 57,
-      "end": 73,
+      "start": 61,
+      "end": 77,
       "loc": {
         "start": {
           "line": 2,
@@ -1060,8 +1128,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 74,
-      "end": 75,
+      "start": 78,
+      "end": 79,
       "loc": {
         "start": {
           "line": 2,
@@ -1086,8 +1154,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 76,
-      "end": 80,
+      "start": 80,
+      "end": 84,
       "loc": {
         "start": {
           "line": 2,
@@ -1113,8 +1181,8 @@
         "updateContext": null
       },
       "value": "./factory",
-      "start": 81,
-      "end": 92,
+      "start": 85,
+      "end": 96,
       "loc": {
         "start": {
           "line": 2,
@@ -1139,8 +1207,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 92,
-      "end": 93,
+      "start": 96,
+      "end": 97,
       "loc": {
         "start": {
           "line": 2,
@@ -1157,7 +1225,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1167,8 +1235,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 94,
-      "end": 100,
+      "start": 99,
+      "end": 105,
       "loc": {
         "start": {
           "line": 3,
@@ -1192,8 +1260,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 101,
-      "end": 102,
+      "start": 106,
+      "end": 107,
       "loc": {
         "start": {
           "line": 3,
@@ -1218,8 +1286,8 @@
         "binop": null
       },
       "value": "BindApplicator",
-      "start": 103,
-      "end": 117,
+      "start": 108,
+      "end": 122,
       "loc": {
         "start": {
           "line": 3,
@@ -1243,8 +1311,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 118,
-      "end": 119,
+      "start": 123,
+      "end": 124,
       "loc": {
         "start": {
           "line": 3,
@@ -1269,8 +1337,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 120,
-      "end": 124,
+      "start": 125,
+      "end": 129,
       "loc": {
         "start": {
           "line": 3,
@@ -1296,8 +1364,8 @@
         "updateContext": null
       },
       "value": "./applicators",
-      "start": 125,
-      "end": 140,
+      "start": 130,
+      "end": 145,
       "loc": {
         "start": {
           "line": 3,
@@ -1322,8 +1390,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 140,
-      "end": 141,
+      "start": 145,
+      "end": 146,
       "loc": {
         "start": {
           "line": 3,
@@ -1337,9 +1405,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\n *\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\n *\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\n * @param {...*} [partials] The argument to be partially applied.\n * @example\n *\n * class MyClass {\n *   @Bind()\n *   bound() {\n *     return this;\n *   }\n *\n *   unbound() {\n *     return this;\n *   }\n * }\n *\n * const myClass = new MyClass();\n *\n * myClass.bound.call(null); // => myClass {}\n * myClass.unbound.call(null); // => null\n ",
-      "start": 142,
-      "end": 857,
+      "value": "*\r\n * Creates a function that invokes func with the this binding of thisArg and partials prepended to the arguments it receives.\r\n *\r\n * The _.bind.placeholder value, which defaults to _ in monolithic builds, may be used as a placeholder for partially applied arguments.\r\n *\r\n * Note: Unlike native Function#bind, this method doesn't set the \"length\" property of bound functions.\r\n * @param {...*} [partials] The argument to be partially applied.\r\n * @example\r\n *\r\n * class MyClass {\r\n *   @Bind()\r\n *   bound() {\r\n *     return this;\r\n *   }\r\n *\r\n *   unbound() {\r\n *     return this;\r\n *   }\r\n * }\r\n *\r\n * const myClass = new MyClass();\r\n *\r\n * myClass.bound.call(null); // => myClass {}\r\n * myClass.unbound.call(null); // => null\r\n ",
+      "start": 148,
+      "end": 887,
       "loc": {
         "start": {
           "line": 4,
@@ -1366,8 +1434,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 858,
-      "end": 864,
+      "start": 889,
+      "end": 895,
       "loc": {
         "start": {
           "line": 29,
@@ -1394,8 +1462,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 865,
-      "end": 870,
+      "start": 896,
+      "end": 901,
       "loc": {
         "start": {
           "line": 29,
@@ -1420,8 +1488,8 @@
         "binop": null
       },
       "value": "Bind",
-      "start": 871,
-      "end": 875,
+      "start": 902,
+      "end": 906,
       "loc": {
         "start": {
           "line": 29,
@@ -1447,8 +1515,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 876,
-      "end": 877,
+      "start": 907,
+      "end": 908,
       "loc": {
         "start": {
           "line": 29,
@@ -1473,8 +1541,8 @@
         "binop": null
       },
       "value": "DecoratorFactory",
-      "start": 878,
-      "end": 894,
+      "start": 909,
+      "end": 925,
       "loc": {
         "start": {
           "line": 29,
@@ -1499,8 +1567,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 894,
-      "end": 895,
+      "start": 925,
+      "end": 926,
       "loc": {
         "start": {
           "line": 29,
@@ -1525,8 +1593,8 @@
         "binop": null
       },
       "value": "createInstanceDecorator",
-      "start": 895,
-      "end": 918,
+      "start": 926,
+      "end": 949,
       "loc": {
         "start": {
           "line": 29,
@@ -1550,8 +1618,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 918,
-      "end": 919,
+      "start": 949,
+      "end": 950,
       "loc": {
         "start": {
           "line": 29,
@@ -1578,8 +1646,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 919,
-      "end": 922,
+      "start": 950,
+      "end": 953,
       "loc": {
         "start": {
           "line": 29,
@@ -1604,8 +1672,8 @@
         "binop": null
       },
       "value": "DecoratorConfig",
-      "start": 923,
-      "end": 938,
+      "start": 954,
+      "end": 969,
       "loc": {
         "start": {
           "line": 29,
@@ -1629,8 +1697,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 938,
-      "end": 939,
+      "start": 969,
+      "end": 970,
       "loc": {
         "start": {
           "line": 29,
@@ -1655,8 +1723,8 @@
         "binop": null
       },
       "value": "bind",
-      "start": 939,
-      "end": 943,
+      "start": 970,
+      "end": 974,
       "loc": {
         "start": {
           "line": 29,
@@ -1681,8 +1749,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 943,
-      "end": 944,
+      "start": 974,
+      "end": 975,
       "loc": {
         "start": {
           "line": 29,
@@ -1709,8 +1777,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 945,
-      "end": 948,
+      "start": 976,
+      "end": 979,
       "loc": {
         "start": {
           "line": 29,
@@ -1735,8 +1803,8 @@
         "binop": null
       },
       "value": "BindApplicator",
-      "start": 949,
-      "end": 963,
+      "start": 980,
+      "end": 994,
       "loc": {
         "start": {
           "line": 29,
@@ -1760,8 +1828,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 963,
-      "end": 964,
+      "start": 994,
+      "end": 995,
       "loc": {
         "start": {
           "line": 29,
@@ -1785,8 +1853,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 964,
-      "end": 965,
+      "start": 995,
+      "end": 996,
       "loc": {
         "start": {
           "line": 29,
@@ -1800,7 +1868,138 @@
     },
     {
       "type": {
-        "label": ")",
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 996,
+      "end": 997,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 107
+        },
+        "end": {
+          "line": 29,
+          "column": 108
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 998,
+      "end": 999,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 109
+        },
+        "end": {
+          "line": 29,
+          "column": 110
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "optionalParams",
+      "start": 1005,
+      "end": 1019,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 4
+        },
+        "end": {
+          "line": 30,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1019,
+      "end": 1020,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 18
+        },
+        "end": {
+          "line": 30,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "true",
+        "keyword": "true",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "true",
+      "start": 1021,
+      "end": 1025,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 20
+        },
+        "end": {
+          "line": 30,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
         "beforeExpr": false,
         "startsExpr": false,
         "rightAssociative": false,
@@ -1810,16 +2009,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 965,
-      "end": 966,
+      "start": 1027,
+      "end": 1028,
       "loc": {
         "start": {
-          "line": 29,
-          "column": 107
+          "line": 31,
+          "column": 0
         },
         "end": {
-          "line": 29,
-          "column": 108
+          "line": 31,
+          "column": 1
         }
       }
     },
@@ -1835,16 +2034,41 @@
         "postfix": false,
         "binop": null
       },
-      "start": 966,
-      "end": 967,
+      "start": 1028,
+      "end": 1029,
       "loc": {
         "start": {
-          "line": 29,
-          "column": 108
+          "line": 31,
+          "column": 1
         },
         "end": {
-          "line": 29,
-          "column": 109
+          "line": 31,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1029,
+      "end": 1030,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 2
+        },
+        "end": {
+          "line": 31,
+          "column": 3
         }
       }
     },
@@ -1861,16 +2085,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 967,
-      "end": 968,
+      "start": 1030,
+      "end": 1031,
       "loc": {
         "start": {
-          "line": 29,
-          "column": 109
+          "line": 31,
+          "column": 3
         },
         "end": {
-          "line": 29,
-          "column": 110
+          "line": 31,
+          "column": 4
         }
       }
     },
@@ -1889,15 +2113,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 969,
-      "end": 975,
+      "start": 1033,
+      "end": 1039,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 32,
           "column": 0
         },
         "end": {
-          "line": 30,
+          "line": 32,
           "column": 6
         }
       }
@@ -1914,15 +2138,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 976,
-      "end": 977,
+      "start": 1040,
+      "end": 1041,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 32,
           "column": 7
         },
         "end": {
-          "line": 30,
+          "line": 32,
           "column": 8
         }
       }
@@ -1940,15 +2164,15 @@
         "binop": null
       },
       "value": "Bind",
-      "start": 978,
-      "end": 982,
+      "start": 1042,
+      "end": 1046,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 32,
           "column": 9
         },
         "end": {
-          "line": 30,
+          "line": 32,
           "column": 13
         }
       }
@@ -1966,15 +2190,15 @@
         "binop": null
       },
       "value": "as",
-      "start": 983,
-      "end": 985,
+      "start": 1047,
+      "end": 1049,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 32,
           "column": 14
         },
         "end": {
-          "line": 30,
+          "line": 32,
           "column": 16
         }
       }
@@ -1992,16 +2216,42 @@
         "binop": null
       },
       "value": "bind",
-      "start": 986,
-      "end": 990,
+      "start": 1050,
+      "end": 1054,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 32,
           "column": 17
         },
         "end": {
-          "line": 30,
+          "line": 32,
           "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1054,
+      "end": 1055,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 21
+        },
+        "end": {
+          "line": 32,
+          "column": 22
         }
       }
     },
@@ -2017,16 +2267,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 991,
-      "end": 992,
+      "start": 1056,
+      "end": 1057,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 22
+          "line": 32,
+          "column": 23
         },
         "end": {
-          "line": 30,
-          "column": 23
+          "line": 32,
+          "column": 24
         }
       }
     },
@@ -2043,16 +2293,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 992,
-      "end": 993,
+      "start": 1057,
+      "end": 1058,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 23
+          "line": 32,
+          "column": 24
         },
         "end": {
-          "line": 30,
-          "column": 24
+          "line": 32,
+          "column": 25
         }
       }
     },
@@ -2071,15 +2321,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 994,
-      "end": 1000,
+      "start": 1060,
+      "end": 1066,
       "loc": {
         "start": {
-          "line": 31,
+          "line": 33,
           "column": 0
         },
         "end": {
-          "line": 31,
+          "line": 33,
           "column": 6
         }
       }
@@ -2099,15 +2349,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 1001,
-      "end": 1008,
+      "start": 1067,
+      "end": 1074,
       "loc": {
         "start": {
-          "line": 31,
+          "line": 33,
           "column": 7
         },
         "end": {
-          "line": 31,
+          "line": 33,
           "column": 14
         }
       }
@@ -2125,15 +2375,15 @@
         "binop": null
       },
       "value": "Bind",
-      "start": 1009,
-      "end": 1013,
+      "start": 1075,
+      "end": 1079,
       "loc": {
         "start": {
-          "line": 31,
+          "line": 33,
           "column": 15
         },
         "end": {
-          "line": 31,
+          "line": 33,
           "column": 19
         }
       }
@@ -2151,15 +2401,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1013,
-      "end": 1014,
+      "start": 1079,
+      "end": 1080,
       "loc": {
         "start": {
-          "line": 31,
+          "line": 33,
           "column": 19
         },
         "end": {
-          "line": 31,
+          "line": 33,
           "column": 20
         }
       }
@@ -2177,15 +2427,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1015,
-      "end": 1015,
+      "start": 1082,
+      "end": 1082,
       "loc": {
         "start": {
-          "line": 32,
+          "line": 34,
           "column": 0
         },
         "end": {
-          "line": 32,
+          "line": 34,
           "column": 0
         }
       }
