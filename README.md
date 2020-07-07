@@ -109,7 +109,7 @@ These decorators are included in the package. These are also exported as lowerca
 #### Example
 
 ```javascript
-import { Debounce, Memoize } from 'lodash-decorators-es';
+import { Debounce, Memoize } from 'lodash-decorators-esm';
 
 class Person {
   constructor(firstName, lastName) {
@@ -424,5 +424,5 @@ If a prototype decorator comes after an instance decorator it will be ignored si
 -   Improved API for decorator factory.
 -   More and better unit tests.
 -   Better performance with instance decorators.
--   Single imports with `import { Debounce } from 'lodash-decorators/debounce'`;
+-   Single imports with `import { Debounce } from 'lodash-decorators-esm/debounce'`;
 -   Composition decorators can be used on properties. These will generate the composed function.
