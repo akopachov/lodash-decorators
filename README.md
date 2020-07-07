@@ -41,7 +41,7 @@ Decorators using lodash functions. View the [API docs](https://steelsojka.github
 
 ## Install
 
-`npm install --save lodash-es lodash-decorators-es`
+`npm install --save lodash-es lodash-decorators-esm`
 
 ### Polyfills
 
